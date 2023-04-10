@@ -1,0 +1,31 @@
+@media screen and (max-width: 1199px) {
+  .header__top__nav li:not(:last-child) {
+    padding-right: 14px;
+  }
+  .header__middle__phones {
+    margin-left: 15px;
+  }
+  .header__top {
+    padding-bottom: 10px;
+  }
+  .col-search-top,
+  .header__top,
+  .header__middle__btn {
+    display: none;
+  }
+  .header__middle {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header__middle__col-mob {
+    display: block;
+  }
+  .mobile-navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding: 0 !important;
+  }
+}

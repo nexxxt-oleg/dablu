@@ -12,10 +12,8 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="icon" href="images/favicon.png">
 
     <link rel="stylesheet" href="css/vendor.css">
-
     <link rel="stylesheet" href="css/app.min.css">
 </head>
 <body>
@@ -24,7 +22,7 @@
         <div class="header__top">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-7">
+                    <div class="col-lg-7 col-md-12">
                         <ul class="nav header__top__nav">
                             <li>
                                 <a href="">О компании</a>
@@ -39,12 +37,12 @@
                             <li><a href="">Контакты</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6">
                         <div class="header__top__work-time">
                             Пн-Пт: 10:00–18:00
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-6">
                         <a class="header__top__email" href="mailto:info@dabl-you.ru">info@dabl-you.ru</a>
                     </div>
                 </div>
@@ -53,7 +51,7 @@
 
         <div class="container">
             <div class="row header__middle">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4 col-6">
                     <div class="header__middle__logo">
                         <a href="/" class="header__top__logo">
                             <svg width="200" height="43">
@@ -61,7 +59,10 @@
                             </svg>
                         </a>
                         <div class="header__middle__btn">
-                            <button class="header__catalog-toggle">
+                            <button class="header__catalog-toggle"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#catalogModal"
+                            >
                                 <svg width="18" height="12">
                                     <use xlink:href="#svg-toggle"></use>
                                 </svg>
@@ -70,9 +71,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="header__middle__col-mob col-md-4 col-6">
+                    <ul class="nav justify-content-end align-items-center">
+                        <li>
+                            <button class="hamburger hamburger--collapses" data-bs-toggle="collapse" data-bs-target="#navbarMob">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-search-top">
                     <div class="header__middle__search">
-                        <div class="header__search">
+                        <div class="header__search" id="searchHeader">
                             <input type="text" class="header__search__inp" placeholder="Поиск">
                             <button type="submit" class="header__search__submit">
                                 <svg width="18" height="18">
@@ -92,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-4 col-mob-dashboard">
                     <div class="d-flex header__middle__right">
                         <div class="header__middle__right__col">
                             <a href="">
@@ -769,7 +781,7 @@
                         <li>Помогаем подобрать материалы для монтажа</li>
                         <li>Даем советы по работе и уходу за материалом и многое другое.</li>
                     </ul>
-                    <button class="btn-yellow">ЗАДАТЬ ВОПРОС</button>
+                    <button data-bs-toggle="modal" data-bs-target="#telModal" class="btn-yellow">ЗАДАТЬ ВОПРОС</button>
                 </div>
             </div>
             <div class="col-lg-5">
@@ -806,40 +818,40 @@
             <div class="swiper" id="brendsSl">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide brends-slider__item">
-                        <img src="./images/dist/part1.png" width="120" height="52" alt="">
+                        <img class="brends-slider__item__logo" src="./images/dist/part1.png" width="120" height="52" alt="">
                     </div>
                     <div class="swiper-slide brends-slider__item">
-                        <img src="./images/dist/part2.png" width="120" height="24" alt="">
+                        <img class="brends-slider__item__logo" src="./images/dist/part2.png" width="120" height="24" alt="">
                     </div>
                     <div class="swiper-slide brends-slider__item">
-                        <img src="./images/dist/part3.png" width="120" height="16" alt="">
+                        <img class="brends-slider__item__logo" src="./images/dist/part3.png" width="120" height="16" alt="">
                     </div>
                     <div class="swiper-slide brends-slider__item">
-                        <img src="./images/dist/part4.png" width="120" height="47" alt="">
+                        <img class="brends-slider__item__logo" src="./images/dist/part4.png" width="120" height="47" alt="">
                     </div>
                     <div class="swiper-slide brends-slider__item">
-                        <img src="./images/dist/part5.png" width="120" height="46" alt="">
+                        <img class="brends-slider__item__logo" src="./images/dist/part5.png" width="120" height="46" alt="">
                     </div>
                     <div class="swiper-slide brends-slider__item">
-                        <img src="./images/dist/part6.png" width="100" height="51" alt="">
+                        <img class="brends-slider__item__logo" src="./images/dist/part6.png" width="100" height="51" alt="">
                     </div>
                     <div class="swiper-slide brends-slider__item">
-                        <img src="./images/dist/part1.png" width="120" height="52" alt="">
+                        <img class="brends-slider__item__logo" src="./images/dist/part1.png" width="120" height="52" alt="">
                     </div>
                     <div class="swiper-slide brends-slider__item">
-                        <img src="./images/dist/part2.png" width="120" height="24" alt="">
+                        <img class="brends-slider__item__logo" src="./images/dist/part2.png" width="120" height="24" alt="">
                     </div>
                     <div class="swiper-slide brends-slider__item">
-                        <img src="./images/dist/part3.png" width="120" height="16" alt="">
+                        <img class="brends-slider__item__logo" src="./images/dist/part3.png" width="120" height="16" alt="">
                     </div>
                     <div class="swiper-slide brends-slider__item">
-                        <img src="./images/dist/part4.png" width="120" height="47" alt="">
+                        <img class="brends-slider__item__logo" src="./images/dist/part4.png" width="120" height="47" alt="">
                     </div>
                     <div class="swiper-slide brends-slider__item">
-                        <img src="./images/dist/part5.png" width="120" height="46" alt="">
+                        <img class="brends-slider__item__logo" src="./images/dist/part5.png" width="120" height="46" alt="">
                     </div>
                     <div class="swiper-slide brends-slider__item">
-                        <img src="./images/dist/part6.png" width="100" height="51" alt="">
+                        <img class="brends-slider__item__logo" src="./images/dist/part6.png" width="100" height="51" alt="">
                     </div>
                 </div>
             </div>
@@ -1136,6 +1148,277 @@
     </div>
 </footer>
 
+<div class="modal modal-fullscreen fade" id="catalogModal" tabindex="-1"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="container">
+            <div class="modal-content">
+
+                <button class="close" data-bs-dismiss="modal" aria-label="Закрыть">
+                    <svg width="18" height="18">
+                        <use xlink:href="#svg-close"></use>
+                    </svg>
+                </button>
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 fpad30">
+                        <div class="category-list__item">
+                            <div class="category-list__item__header">
+                                <a href="" class="category-list__item__children">
+                                    <div class="category-list__item__children__ico">
+                                        <img src="./images/dist/cat1.svg" width="60" height="60" alt="">
+                                    </div>
+                                    <div class="category-list__item__children__title">
+                                        Мощение
+                                    </div>
+                                </a>
+                            </div>
+                            <ul class="nav flex-column category-list__item__body">
+                                <li>
+                                    <a href="">Гранитная брусчатка</a>
+                                </li>
+                                <li>
+                                    <a href="">Природный камень</a>
+                                </li>
+                                <li>
+                                    <a href="">Бетонная брусчатка</a>
+                                </li>
+                                <li>
+                                    <a href="">Клинкерная брусчатка</a>
+                                </li>
+                                <li>
+                                    <a href="">Уличный керамогранит</a>
+                                </li>
+                                <li>
+                                    <a href="">Клинкерная плитка и ступени</a>
+                                </li>
+                                <li>
+                                    <a href="">Бордюры</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 fpad30">
+                        <div class="category-list__item">
+                            <div class="category-list__item__header">
+                                <a href="" class="category-list__item__children">
+                                    <div class="category-list__item__children__ico">
+                                        <img src="./images/dist/cat2.svg" width="60" height="60" alt="">
+                                    </div>
+                                    <div class="category-list__item__children__title">
+                                        Ландшафтный
+                                        дизайн
+                                    </div>
+                                </a>
+                            </div>
+                            <ul class="nav flex-column category-list__item__body">
+                                <li>
+                                    <a href="">Валуны</a>
+                                </li>
+                                <li>
+                                    <a href="">Гальки, крошки</a>
+                                </li>
+                                <li>
+                                    <a href="">Кашпо</a>
+                                </li>
+                                <li>
+                                    <a href="">Чаши</a>
+                                </li>
+                                <li>
+                                    <a href="">Кортен</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 fpad30">
+                        <div class="category-list__item">
+                            <div class="category-list__item__header">
+                                <a href="" class="category-list__item__children">
+                                    <div class="category-list__item__children__ico">
+                                        <img src="./images/dist/cat3.svg" width="60" height="60" alt="">
+                                    </div>
+                                    <div class="category-list__item__children__title">
+                                        Фасад
+                                    </div>
+                                </a>
+                            </div>
+                            <ul class="nav flex-column category-list__item__body">
+                                <li>
+                                    <a href="">Природный камень</a>
+                                </li>
+                                <li>
+                                    <a href="">Панели из камня</a>
+                                </li>
+                                <li>
+                                    <a href="">Мрамор, доломит, гранит</a>
+                                </li>
+                                <li>
+                                    <a href="">Облицовочный кирпич</a>
+                                </li>
+                                <li>
+                                    <a href="">Плитка для облицовки</a>
+                                </li>
+                                <li>
+                                    <a href="">Термопанели</a>
+                                </li>
+                                <li>
+                                    <a href="">Искусственный камень</a>
+                                </li>
+                                <li>
+                                    <a href="">Керамические подоконники и отливы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 fpad30">
+                        <div class="category-list__item">
+                            <div class="category-list__item__header">
+                                <a href="" class="category-list__item__children">
+                                    <div class="category-list__item__children__ico">
+                                        <img src="./images/dist/cat4.svg" width="60" height="60" alt="">
+                                    </div>
+                                    <div class="category-list__item__children__title">
+                                        Кровля
+                                    </div>
+                                </a>
+                            </div>
+                            <ul class="nav flex-column category-list__item__body">
+                                <li>
+                                    <a href="">Керамика</a>
+                                </li>
+                                <li>
+                                    <a href="">Цементно-песчаная</a>
+                                </li>
+                                <li>
+                                    <a href="">Сланец</a>
+                                </li>
+                                <li>
+                                    <a href="">Сопутсвующие товары</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light mobile-navigation">
+    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarMob">
+111
+        </div>
+    </div>
+</nav>
+
+<div class="modal fade" id="telModal" tabindex="-1"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog__form modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-dialog__title">Заказать звонок</div>
+            <button class="close" data-bs-dismiss="modal" aria-label="Закрыть">
+                <svg width="18" height="18">
+                    <use xlink:href="#svg-close"></use>
+                </svg>
+            </button>
+            <form action="">
+                <div class="modal-dialog__form__row">
+                    <label for="nameInp" class="form-label">Ваше имя</label>
+                    <input type="text" required class="form-control" id="nameInp" autocomplete="on">
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="modal-dialog__form__row">
+                            <label for="telInp" class="form-label">Номер телефона</label>
+                            <input type="tel" required class="form-control js-mask-phone" id="telInp" autocomplete="on">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="modal-dialog__form__row">
+                            <label for="timeInp" class="form-label">Удобное время звонка</label>
+                            <select class="form-select" id="timeInp">
+                                <option value="1">Любое</option>
+                                <option value="2">Два</option>
+                                <option value="3">Три</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center tpad5">
+                    <div class="col-lg-6">
+                        <div class="modal-dialog__form__ps">
+                            Оставляя заявку, вы соглашаетесь с
+                            <a href="" target="_blank">политикой конфиденциальности</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <button class="btn-yellow btn-submit">ЗАКАЗАТЬ ЗВОНОК</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="title-search-result" style="display:none;" id="searchRes">
+    <div class="title-search-result__wrap">
+
+        <div class="title-search-item">
+            <a href=""
+               class="d-flex align-items-center">
+                <div class="title-search-item__img">
+                    <img
+                            src="./images/dist/s1.jpg" alt="">
+                </div>
+                <div class="title-search-item__desc">
+                    <div class="title-search-item__title">Песчаник серо-зеленый рваный край 10-15 мм
+                    </div>
+                    <div class="title-search-item__cost"><b>556,00</b> ₽/м2</div>
+                </div>
+
+            </a>
+        </div>
+
+        <div class="title-search-item">
+            <a href=""
+               class="d-flex align-items-center">
+                <div class="title-search-item__img">
+                    <img
+                            src="./images/dist/s1.jpg" alt="">
+                </div>
+                <div class="title-search-item__desc">
+                    <div class="title-search-item__title">Песчаник серо-зеленый рваный край 10-15 мм
+                    </div>
+                    <div class="title-search-item__cost"><b>556,00</b> ₽/м2</div>
+                </div>
+
+            </a>
+        </div>
+
+        <div class="title-search-item">
+            <a href=""
+               class="d-flex align-items-center">
+                <div class="title-search-item__img">
+                    <img
+                            src="./images/dist/s1.jpg" alt="">
+                </div>
+                <div class="title-search-item__desc">
+                    <div class="title-search-item__title">Песчаник серо-зеленый рваный край 10-15 мм
+                    </div>
+                    <div class="title-search-item__cost"><b>556,00</b> ₽/м2</div>
+                </div>
+
+            </a>
+        </div>
+
+        <div class="title-search-all">
+            <a class="go__more-link" href="/search/">Все результаты</a>
+        </div>
+
+
+    </div>
+</div>
+
 <div style="display: none">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -1213,10 +1496,15 @@
                   d="M234.67,0H21.33A21.33,21.33,0,0,0,0,21.33H0A21.33,21.33,0,0,0,21.33,42.67H234.67A21.33,21.33,0,0,0,256,21.33h0A21.33,21.33,0,0,0,234.67,0Z"/>
         </symbol>
 
-        <symbol id="svg-fav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.18 481.86">
-            <path fill="currentColor" d="M256.09,481.86,237.62,468.8C213.3,451.61.09,296.7.09,155.2A150.11,150.11,0,0,1,144.09,0a140.17,140.17,0,0,1,112,57.75A140.18,140.18,0,0,1,368.09,0a150.1,150.1,0,0,1,144,155.2c0,141.5-213.2,296.41-237.52,313.6ZM144.09,64a86.25,86.25,0,0,0-80,91.2c0,83.54,125.08,196.48,192,247.7,66.93-51.2,192-164.16,192-247.7a86.24,86.24,0,0,0-80-91.2,86.25,86.25,0,0,0-80,91.2h-64A86.24,86.24,0,0,0,144.09,64Z"/>
+        <symbol id="svg-fav" viewBox="0 0 512.18 481.86">
+            <path fill="currentColor"
+                  d="M256.09,481.86,237.62,468.8C213.3,451.61.09,296.7.09,155.2A150.11,150.11,0,0,1,144.09,0a140.17,140.17,0,0,1,112,57.75A140.18,140.18,0,0,1,368.09,0a150.1,150.1,0,0,1,144,155.2c0,141.5-213.2,296.41-237.52,313.6ZM144.09,64a86.25,86.25,0,0,0-80,91.2c0,83.54,125.08,196.48,192,247.7,66.93-51.2,192-164.16,192-247.7a86.24,86.24,0,0,0-80-91.2,86.25,86.25,0,0,0-80,91.2h-64A86.24,86.24,0,0,0,144.09,64Z"/>
         </symbol>
 
+        <symbol id="svg-close" viewBox="0 0 514.6 514.6">
+            <polygon fill="currentColor"
+                    points="514.6 45.27 469.33 0 257.3 212.05 45.27 0 0 45.27 212.05 257.3 0 469.33 45.27 514.6 257.3 302.55 469.33 514.6 514.6 469.33 302.55 257.3 514.6 45.27"/>
+        </symbol>
     </svg>
 </div>
 

@@ -217,7 +217,7 @@ body {
   color: #000;
   position: absolute;
   z-index: 10;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1) !important;
 
   &.swiper-prev {
     left: -30px;
@@ -479,6 +479,9 @@ body {
     font-weight: 500;
     color: #231f20;
     text-decoration: none;
+    &:hover {
+      color: #546770;
+    }
   }
 
   &__props {
@@ -576,11 +579,17 @@ body {
     font-weight: 500;
     font-size: 14px;
     text-transform: uppercase;
+    &:hover {
+      background: #fac219;
+    }
   }
 
   &__col-bay {
     flex-grow: 1;
   }
+}
+.btn-yellow:hover {
+  background: #fac219;
 }
 
 .product-folder__count {
@@ -617,6 +626,10 @@ body {
     background: #f3f3f3;
     color: #000;
     padding: 0;
+
+    &:hover {
+      background: #e1e1e1;
+    }
 
     &--plus {
       top: 0;
@@ -685,11 +698,17 @@ body {
   background: #f3f3f3;
   color: #231f20;
   border-radius: 16px;
+  &:hover {
+    color: #546770;
+  }
 }
 
 button:focus,
 button:hover,
-button:active {
+button:active,
+input:focus,
+input:hover,
+input:active {
   outline: none;
   box-shadow: none;
 }
@@ -802,6 +821,8 @@ button:active {
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
+  justify-content: center;
+
 }
 
 .help-box__alert {
@@ -822,6 +843,9 @@ button:active {
       line-height: 24px;
       color: #fff;
       text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
     }
   }
 }
@@ -841,6 +865,9 @@ button:active {
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: underline;
+  &:hover{
+    text-decoration: none;
+  }
 }
 
 .pt-15 {
@@ -1039,7 +1066,7 @@ button:active {
   &__nav {
     display: block;
     li:not(:last-child) {
-      padding-bottom: 6px;
+      padding-bottom: 9px;
     }
     a {
       display: block;
@@ -1047,6 +1074,9 @@ button:active {
       font-size: 14px;
       line-height: 24px;
       text-decoration: none;
+      &:hover {
+        color: #546770;
+      }
     }
     &--first {
       a {
@@ -1128,4 +1158,212 @@ button:active {
 }
 .privilege-row {
   padding-top: 35px;
+}
+.modal-fullscreen {
+  background: #fff;
+  .modal-dialog {
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+  }
+  .category-list__item {
+    padding: 0;
+    background: transparent;
+  }
+}
+.brends-slider__item__logo {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+.footer__contacts__text a:hover {
+  text-decoration: none;
+}
+.footer__bottom a:hover {
+  color: #546770;
+}
+.modal-fullscreen {
+  .modal-content {
+    position: relative;
+    padding-top: 100px;
+  }
+
+}
+.modal-content {
+  .close {
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    top: 20px;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    color: #000;
+  }
+}
+.modal-dialog {
+ &.modal-dialog__form {
+   --bs-modal-width: 570px;
+    .modal-content {
+      background: #fff;
+      padding: 30px 40px 40px;
+      .close {
+        margin-top: -10px;
+      }
+    }
+  }
+  &__title {
+    color: #231f20;
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+.modal-dialog__form__row {
+  padding-bottom: 25px;
+}
+.form-label {
+  display: block;
+  color: #53676f;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0 0 3px 16px;
+  margin: 0;
+}
+.form-control {
+  height: 48px;
+  width: 100%;
+  padding: 5px 15px;
+  border-color: #cecece;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #231f20;
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none;
+    box-shadow: none;
+    border-color: #cecece;
+  }
+}
+.form-select {
+  height: 48px;
+  width: 100%;
+  padding-left: 15px;
+  border-color: #cecece;
+  border-radius: 4px;
+  font-size: 14px;
+  background-size: 7px 4px !important;
+  color: #231f20;
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280.99 161.83'%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Outline'%3E%3Cpath d='M21.24,0H259.75a21.33,21.33,0,0,1,14.93,36.48l-119,119a21.33,21.33,0,0,1-30.17.12l-.12-.12-119-119A21.34,21.34,0,0,1,21.24,0Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none;
+    box-shadow: none;
+    border-color: #cecece;
+  }
+}
+.modal-dialog__form__ps {
+  font-size: 12px;
+  line-height: 18px;
+  a {
+    color: #231f20;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.btn-submit {
+  width: 100%;
+}
+.tpad5 {
+  padding-top: 5px;
+}
+.title-search-result {
+  position: absolute;
+  z-index: 100;
+  margin-top: 15px;
+  width: 540px;
+  background: #fff;
+  padding: 20px 0 0;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.title-search-item {
+  a {
+    padding: 0 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+}
+.title-search-item__img {
+  width: 70px;
+  min-width: 70px;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+.title-search-item__desc {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+.title-search-item__title {
+  color: #231f20;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  &:hover {
+    color: #546770;
+  }
+}
+.title-search-item__cost {
+  color: #546770;
+  font-size: 12px;
+  line-height: 24px;
+  white-space: nowrap;
+  font-weight: bold;
+  b {
+    font-size: 16px;
+  }
+}
+.title-search-all {
+  padding-top: 10px;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    border-top: 1px solid #f3f3f3;
+    color: #231f20;
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 14px;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+}
+.header__middle__col-mob {
+  display: none;
+}
+.mobile-navigation {
+  display: none;
 }
