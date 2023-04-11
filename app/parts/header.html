@@ -50,7 +50,7 @@
 
         <div class="container">
             <div class="row header__middle">
-                <div class="col-lg-4 col-md-4 col-6">
+                <div class="col-lg-4 col-md-4 col-5">
                     <div class="header__middle__logo">
                         <a href="/" class="header__top__logo">
                             <svg width="200" height="43">
@@ -70,10 +70,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="header__middle__col-mob col-md-4 col-6">
-                    <ul class="nav justify-content-end align-items-center">
+                <div class="header__middle__col-mob col-md-4 col-7">
+                    <ul class="nav justify-content-end align-items-center header__middle__col-mob__list">
                         <li>
-                            <button class="hamburger hamburger--collapses" data-bs-toggle="collapse" data-bs-target="#navbarMob">
+                            <a href="tel:88122447581" class="header__middle__mob-tel">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#svg-tel"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <button class="header__middle__search-mob-open">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#svg-search"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="hamburger hamburger--collapses collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navbarMob">
                                 <div class="hamburger-box">
                                     <div class="hamburger-inner"></div>
                                 </div>
@@ -81,7 +97,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-6 col-search-top">
+                <div class="col-lg-6 col-search-top" id="searchTop">
                     <div class="header__middle__search">
                         <div class="header__search" id="searchHeader">
                             <input type="text" class="header__search__inp" placeholder="Поиск">
@@ -106,25 +122,53 @@
                 <div class="col-lg-2 col-md-4 col-mob-dashboard">
                     <div class="d-flex header__middle__right">
                         <div class="header__middle__right__col">
-                            <a href="">
-                                <svg width="28" height="28">
-                                    <use xlink:href="#svg-comp"></use>
-                                </svg>
+                            <a href="" class="header__middle__link">
+                                <div class="header__middle__link__ico">
+                                    <svg width="28" height="28">
+                                        <use xlink:href="#svg-comp"></use>
+                                    </svg>
+                                </div>
+                                <div class="header__middle__link__caption">
+                                    Акции
+                                </div>
                             </a>
                         </div>
                         <div class="header__middle__right__col">
-                            <a href="">
-                                <svg width="30" height="28">
-                                    <use xlink:href="#svg-fav"></use>
-                                </svg>
+                            <a href="" class="header__middle__link">
+                                <div class="header__middle__link__ico">
+                                    <svg width="30" height="28">
+                                        <use xlink:href="#svg-fav"></use>
+                                    </svg>
+                                </div>
+                                <div class="header__middle__link__caption">
+                                    Избранное
+                                </div>
                             </a>
                         </div>
                         <div class="header__middle__right__col">
-                            <a href="">
-                                <span class="number">3</span>
-                                <svg width="28" height="28">
-                                    <use xlink:href="#svg-cart"></use>
-                                </svg>
+                            <a href="" class="header__middle__link">
+                                <div class="header__middle__link__ico">
+                                    <span class="number">3</span>
+                                    <svg width="28" height="28">
+                                        <use xlink:href="#svg-cart"></use>
+                                    </svg>
+                                </div>
+                                <div class="header__middle__link__caption">
+                                    Корзина
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="header__middle__right__col header__middle__right__col--mob">
+                            <a href="#catalogModal" class="header__middle__link" data-bs-toggle="modal" data-bs-target="#catalogModal">
+                                <div class="header__middle__link__ico">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="#svg-catalog"></use>
+                                    </svg>
+                                </div>
+                                <div class="header__middle__link__caption">
+                                    Каталог
+                                </div>
                             </a>
                         </div>
                     </div>

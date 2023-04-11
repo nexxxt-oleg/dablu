@@ -548,14 +548,11 @@ body {
 
     &__val {
       color: #546770;
-      font-size: 12px;
-      line-height: 18px;
       font-weight: 700;
-
-      b {
-        font-weight: 700;
-        font-size: 16px;
-      }
+      font-size: 16px;
+    }
+    .currency {
+      font-size: 12px;
     }
   }
 
@@ -829,6 +826,9 @@ input:active {
   margin-top: 45px;
   padding: 22px 30px 26px 26px;
   background: #748087;
+  p {
+    font-size: 14px;
+  }
 }
 
 .help-box__links {
@@ -1364,6 +1364,12 @@ input:active {
 .header__middle__col-mob {
   display: none;
 }
-.mobile-navigation {
+.mobile-navigation,
+.header__middle__right__col--mob,
+.header__middle__link__caption,
+.product-folder__fav__text,
+.slider-catalog .swiper-scrollbar,
+.only-mob,
+.modal-dialog__mob-header {
   display: none;
 }
