@@ -1370,6 +1370,11 @@ input:active {
 .product-folder__fav__text,
 .slider-catalog .swiper-scrollbar,
 .only-mob,
-.modal-dialog__mob-header {
+.modal-dialog__mob-header,
+.header__search__submit__text,
+.header__middle__search__mob-close {
   display: none;
+}
+.header__search__wrap {
+  position: relative;
 }

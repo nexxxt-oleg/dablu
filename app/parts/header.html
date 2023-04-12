@@ -80,7 +80,7 @@
                             </a>
                         </li>
                         <li>
-                            <button class="header__middle__search-mob-open">
+                            <button class="header__middle__search-mob-open" id="mobSearchOpen">
                                 <svg width="20" height="20">
                                     <use xlink:href="#svg-search"></use>
                                 </svg>
@@ -100,12 +100,24 @@
                 <div class="col-lg-6 col-search-top" id="searchTop">
                     <div class="header__middle__search">
                         <div class="header__search" id="searchHeader">
-                            <input type="text" class="header__search__inp" placeholder="Поиск">
-                            <button type="submit" class="header__search__submit">
+                            <div class="header__search__wrap">
+                                <input type="text" class="header__search__inp" placeholder="Поиск">
+                                <button type="submit" class="header__search__submit">
+                                    <div class="header__search__submit__ico">
+                                        <svg width="18" height="18">
+                                            <use xlink:href="#svg-search"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="header__search__submit__text">
+                                        найти
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="header__middle__search__mob-close" id="searchClose">
                                 <svg width="18" height="18">
-                                    <use xlink:href="#svg-search"></use>
+                                    <use xlink:href="#svg-close"></use>
                                 </svg>
-                            </button>
+                            </div>
                         </div>
                         <div class="header__middle__phones">
                             <div class="d-flex header__middle__phones__row">
@@ -160,7 +172,8 @@
                         </div>
 
                         <div class="header__middle__right__col header__middle__right__col--mob">
-                            <a href="#catalogModal" class="header__middle__link" data-bs-toggle="modal" data-bs-target="#catalogModal">
+                            <a href="#catalogModal" class="header__middle__link" data-bs-toggle="modal"
+                               data-bs-target="#catalogModal">
                                 <div class="header__middle__link__ico">
                                     <svg width="20" height="20">
                                         <use xlink:href="#svg-catalog"></use>
