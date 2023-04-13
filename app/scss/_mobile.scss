@@ -728,4 +728,24 @@
   .category-card {
     padding-bottom: 20px;
   }
+  .catalog-level1 {
+    display: flex;
+    &__img {
+      width: 70px;
+      height: 70px;
+      min-width: 70px;
+    }
+    &__footer {
+      width: 150px;
+      flex-grow: 1;
+      padding-left: 20px;
+      align-items: center;
+    }
+  }
+  .fpad30 {
+    padding-bottom: 10px;
+  }
+  .mob-fpad20 {
+    padding-bottom: 20px;
+  }
 }

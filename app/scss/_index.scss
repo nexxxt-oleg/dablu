@@ -450,6 +450,7 @@ body {
   display: flex;
   min-height: 100%;
   flex-direction: column;
+  position: relative;
 
   &__img {
     display: block;
@@ -1403,6 +1404,9 @@ input:active {
         font-size: 12px;
         line-height: 16px;
         text-decoration: none;
+        &:hover {
+          color: #546770;
+        }
       }
     }
   }
@@ -1473,4 +1477,203 @@ input:active {
     color: #231f20;
   }
 
+}
+
+.fpad30 {
+  padding-bottom: 30px;
+}
+.catalog-level1 {
+  display: block;
+  text-decoration: none;
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 270px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      width:auto;
+      height: auto;
+    }
+  }
+  &__footer {
+    padding: 15px 8px 10px 10px;
+  }
+  &__title {
+    padding-right: 10px;
+    color: #231f20;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    &:hover {
+      color: #546770;
+    }
+  }
+}
+
+.catalog-page {
+  &__top {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+    &__count {
+      padding-right: 15px;
+      font-size: 14px;
+      line-height: 18px;
+      white-space: nowrap;
+      b {
+        font-weight: 500;
+      }
+    }
+    &__sort {
+      margin-left: auto;
+      max-width: 240px;
+      width: 100%;
+    }
+
+    &__view {
+      margin-left: 20px;
+    }
+  }
+  &__sb {
+    padding-right: 30px;
+  }
+}
+.select-sort {
+  display: block;
+  width: 100%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #eef0f0;
+  height: 38px;
+  border-radius: 4px;
+  padding: 5px 15px;
+  font-size: 14px;
+  line-height: 28px;
+  color: #231f20;
+  border: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280.99 161.83'%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Outline'%3E%3Cpath d='M21.24,0H259.75a21.33,21.33,0,0,1,14.93,36.48l-119,119a21.33,21.33,0,0,1-30.17.12l-.12-.12-119-119A21.34,21.34,0,0,1,21.24,0Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-position: right 15px top 50%;
+  background-repeat: no-repeat;
+  background-size: 7px 4px;
+  &:focus,
+  &:hover,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+.view-switch {
+  padding: 5px;
+  background-color: #eef0f0;
+  border-radius: 4px;
+  width: 110px;
+  justify-content: space-between;
+  &__item {
+    width: 48px;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 28px;
+      border-radius: 4px;
+      color: #231f20;
+    }
+    &.active {
+      a {
+        background-color: #fff;
+      }
+    }
+  }
+}
+.fpad40 {
+  padding-bottom: 40px;
+}
+
+.catalog-page__filter-box {
+  padding-bottom: 30px;
+  &__title {
+    padding-bottom: 15px;
+    color: #546770;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  &__range {
+    padding: 20px 0;
+    &__col {
+      width: calc(50% - 10px);
+      position: relative;
+      border-bottom: 1px solid #cecece;
+      input {
+        display: block;
+        border: none;
+        width: 100%;
+        padding-left: 25px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+      }
+      label {
+        height: 30px;
+        line-height: 30px;
+        color: #a3a3a3;
+        font-size: 14px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+  &__list-chek {
+    li {
+      padding-bottom: 10px;
+    }
+  }
+}
+.custom-chek {
+  display: block;
+  input {
+    display: none;
+    &:checked + .custom-chek__value::after {
+      background-color: #546770;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 511.99 368.41'%3E%3Cg id='Слой_2' data-name='Слой 2'%3E%3Cg id='Capa_1' data-name='Capa 1'%3E%3Cpath fill='%23fff' d='M500.09,11.89a40.62,40.62,0,0,0-57.43,0L184.21,270.36,69.33,155.49A40.61,40.61,0,0,0,11.9,212.92L155.48,356.51a40.61,40.61,0,0,0,57.44,0L500.09,69.33A40.62,40.62,0,0,0,500.09,11.89Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+  }
+  &__value {
+    display: block;
+    cursor: pointer;
+    padding: 0 0 0 32px;
+    color: #231f20;
+    font-size: 14px;
+    line-height: 18px;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 4px;
+      background-color: #eef0f0;
+      transition: all 0.2s ease-in-out;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 9px 6px;
+    }
+    &:hover {
+      color: #546770;
+    }
+  }
+  &__count {
+    color: #a3a3a3;
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
