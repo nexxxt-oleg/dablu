@@ -217,89 +217,115 @@
 
         <div class="wrapper-page__body">
             <div class="row fpad30 mob-fpad20 catalog-page">
-                <div class="col-lg-3 col-md-4 catalog-page__col-left">
+                <div class="col-lg-3 col-md-4 catalog-page__col-left" id="catalogFilter">
                     <div class="catalog-page__sb">
-                        <div class="catalog-page__filter-box">
-                            <div class="catalog-page__filter-box__title">
-                                Цена, ₽
-                            </div>
-                            <div class="catalog-page__filter-box__body">
-                                <div class="d-flex justify-content-between catalog-page__filter-box__range">
-                                    <div class="catalog-page__filter-box__range__col">
-                                        <label for="min">от</label>
-                                        <input type="text" id="min" name="min">
-                                    </div>
-                                    <div class="catalog-page__filter-box__range__col">
-                                        <label for="max">до</label>
-                                        <input type="text" id="max" name="max">
+                        <div class="catalog-page__sb__header">
+                            <div class="catalog-page__sb__header__title">ПОДБОР ПО ПАРАМЕТРАМ</div>
+                            <a class="catalog-page__sb__header__close" id="catalogFilterClose">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#svg-close"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="catalog-page__sb__body">
+                            <div class="catalog-page__filter-box">
+                                <div class="catalog-page__filter-box__title">
+                                    Цена, ₽
+                                </div>
+                                <div class="catalog-page__filter-box__body">
+                                    <div class="d-flex justify-content-between catalog-page__filter-box__range">
+                                        <div class="catalog-page__filter-box__range__col">
+                                            <label for="min">от</label>
+                                            <input type="text" id="min" name="min">
+                                        </div>
+                                        <div class="catalog-page__filter-box__range__col">
+                                            <label for="max">до</label>
+                                            <input type="text" id="max" name="max">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="catalog-page__filter-box">
+                                <div class="catalog-page__filter-box__title">
+                                    Цвет
+                                </div>
+                                <div class="catalog-page__filter-box__body">
+                                    <ul class="nav flex-column catalog-page__filter-box__list-chek">
+                                        <li>
+                                            <label class="custom-chek">
+                                                <input type="checkbox" name="color" value="Бежевый">
+                                                <div class="custom-chek__value">Бежевый <span
+                                                        class="custom-chek__count">1</span></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom-chek">
+                                                <input type="checkbox" name="color" value="Белый">
+                                                <div class="custom-chek__value">Белый <span
+                                                        class="custom-chek__count">1</span></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom-chek">
+                                                <input type="checkbox" name="color" value="Бордовый">
+                                                <div class="custom-chek__value">Бордовый <span
+                                                        class="custom-chek__count">1</span></div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="catalog-page__filter-box">
+                                <div class="catalog-page__filter-box__title">
+                                    Цвет
+                                </div>
+                                <div class="catalog-page__filter-box__body">
+                                    <ul class="nav flex-column catalog-page__filter-box__list-chek">
+                                        <li>
+                                            <label class="custom-chek">
+                                                <input type="checkbox" name="color" value="Бежевый">
+                                                <div class="custom-chek__value">Бежевый <span
+                                                        class="custom-chek__count">1</span></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom-chek">
+                                                <input type="checkbox" name="color" value="Белый">
+                                                <div class="custom-chek__value">Белый <span
+                                                        class="custom-chek__count">1</span></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="custom-chek">
+                                                <input type="checkbox" name="color" value="Бордовый">
+                                                <div class="custom-chek__value">Бордовый <span
+                                                        class="custom-chek__count">1</span></div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="catalog-page__filter-box">
-                            <div class="catalog-page__filter-box__title">
-                                Цвет
-                            </div>
-                            <div class="catalog-page__filter-box__body">
-                                <ul class="nav flex-column catalog-page__filter-box__list-chek">
-                                    <li>
-                                        <label class="custom-chek">
-                                            <input type="checkbox" name="color" value="Бежевый">
-                                            <div class="custom-chek__value">Бежевый <span
-                                                    class="custom-chek__count">1</span></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="custom-chek">
-                                            <input type="checkbox" name="color" value="Белый">
-                                            <div class="custom-chek__value">Белый <span
-                                                    class="custom-chek__count">1</span></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="custom-chek">
-                                            <input type="checkbox" name="color" value="Бордовый">
-                                            <div class="custom-chek__value">Бордовый <span
-                                                    class="custom-chek__count">1</span></div>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="catalog-page__filter-box">
-                            <div class="catalog-page__filter-box__title">
-                                Цвет
-                            </div>
-                            <div class="catalog-page__filter-box__body">
-                                <ul class="nav flex-column catalog-page__filter-box__list-chek">
-                                    <li>
-                                        <label class="custom-chek">
-                                            <input type="checkbox" name="color" value="Бежевый">
-                                            <div class="custom-chek__value">Бежевый <span
-                                                    class="custom-chek__count">1</span></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="custom-chek">
-                                            <input type="checkbox" name="color" value="Белый">
-                                            <div class="custom-chek__value">Белый <span
-                                                    class="custom-chek__count">1</span></div>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <label class="custom-chek">
-                                            <input type="checkbox" name="color" value="Бордовый">
-                                            <div class="custom-chek__value">Бордовый <span
-                                                    class="custom-chek__count">1</span></div>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="catalog-page__sb__footer">
+                            <button class="btn btn--submit">ПРИМЕНИТЬ</button>
+                            <a href="" class="btn btn--reset">
+                                <svg width="12" height="12">
+                                    <use xlink:href="#svg-close"></use>
+                                </svg>
+                                Сбросить фильтр
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-8 catalog-page__col-right">
+                    <div class="only-mob">
+                        <button class="btn btn--submit" id="openFilter">
+                            <svg width="13" height="12">
+                                <use xlink:href="#svg-filter"></use>
+                            </svg>
+                            <span class="fs-12">Подбор по параметрам</span>
+                        </button>
+                    </div>
                     <div class="catalog-page__top">
                         <div class="catalog-page__top__count">
                             Количество товаров: <b>57</b>
@@ -329,7 +355,7 @@
                     </div>
 
                     <div class="catalog-page__list row">
-                        <div class="col-lg-4 col-md-6 col-12 fpad40">
+                        <div class="col-lg-4 col-md-6 col-6 fpad40">
                             <div class="product-folder">
                                 <a href="" class="product-folder__img">
                                     <picture>
@@ -396,7 +422,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 fpad40">
+                        <div class="col-lg-4 col-md-6 col-6 fpad40">
                             <div class="product-folder">
                                 <a href="" class="product-folder__img">
                                     <picture>
@@ -468,7 +494,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 fpad40">
+                        <div class="col-lg-4 col-md-6 col-6 fpad40">
                             <div class="product-folder">
                                 <a href="" class="product-folder__img">
                                     <picture>
@@ -535,7 +561,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 fpad40">
+                        <div class="col-lg-4 col-md-6 col-6 fpad40">
                             <div class="product-folder">
                                 <ul class="nav product-folder__labels">
                                     <li>
@@ -581,7 +607,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 fpad40">
+                        <div class="col-lg-4 col-md-6 col-6 fpad40">
                             <div class="product-folder">
                                 <a href="" class="product-folder__img">
                                     <picture>
@@ -653,7 +679,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 fpad40">
+                        <div class="col-lg-4 col-md-6 col-6 fpad40">
                             <div class="product-folder">
                                 <a href="" class="product-folder__img">
                                     <picture>
@@ -741,7 +767,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 col-12 fpad40">
+                        <div class="col-lg-4 col-md-6 col-6 fpad40">
                             <div class="product-folder">
                                 <a href="" class="product-folder__img">
                                     <picture>
@@ -808,7 +834,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 fpad40">
+                        <div class="col-lg-4 col-md-6 col-6 fpad40">
                             <div class="product-folder">
                                 <a href="" class="product-folder__img">
                                     <picture>
@@ -880,7 +906,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 fpad40">
+                        <div class="col-lg-4 col-md-6 col-6 fpad40">
                             <div class="product-folder">
                                 <a href="" class="product-folder__img">
                                     <picture>
@@ -947,7 +973,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 fpad40">
+                        <div class="col-lg-4 col-md-6 col-6 fpad40">
                             <div class="product-folder">
                                 <ul class="nav product-folder__labels">
                                     <li>
@@ -993,7 +1019,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 fpad40">
+                        <div class="col-lg-4 col-md-6 col-6 fpad40">
                             <div class="product-folder">
                                 <a href="" class="product-folder__img">
                                     <picture>
@@ -1065,7 +1091,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-12 fpad40">
+                        <div class="col-lg-4 col-md-6 col-6 fpad40">
                             <div class="product-folder">
                                 <a href="" class="product-folder__img">
                                     <picture>
@@ -1131,6 +1157,59 @@
                                     <span class="product-folder__fav__text">В избранное</span>
                                 </button>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-page__pagination pagination">
+                        <button class="pagination__more-btn">
+                            ПОКАЗАТЬ ЕЩё
+                        </button>
+                        <div class="pagination__list">
+                            <div class="pagination__list__prev">
+                                <a href="" class="pagination__list__btn">
+                                    <svg width="12" height="11">
+                                        <use xlink:href="#svg-page-prev"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <ul class="nav pagination__list__nav">
+
+                                <li>
+                                    <a class="pagination__list__item" href="">1</a>
+                                </li>
+                                <li>
+                                    <span class="current pagination__list__item">2</span>
+                                </li>
+                                <li >
+                                    <a class="pagination__list__item" href="">3</a>
+                                </li>
+                                <li class="hidden-mob">
+                                    <a class="pagination__list__item" href="">4</a>
+                                </li>
+                                <li class="hidden-mob">
+                                    <a class="pagination__list__item" href="">5</a>
+                                </li>
+                                <li >
+                                    <span class="dots pagination__list__item">...</span>
+                                </li>
+                                <li >
+                                    <a class="pagination__list__item" href="">10</a>
+                                </li>
+                            </ul>
+                            <div class="pagination__list__next">
+                                <a href="" class="pagination__list__btn">
+                                    <svg width="12" height="11">
+                                        <use xlink:href="#svg-page-next"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text catalog-page__text" >
+                        <div id="moreText">
+                            <p>Гранитная брусчатка относится к наиболее долговечным видам тротуарного и дорожного покрытия. Она устойчива к морозам, перепаду температур, выдерживает значительные нагрузки. К дополнительным преимуществам такого материала относится возможность создания уникальных покрытий, например комбинируя плитки различного цвета. Компания Дабл•Ю предлагает строительным компаниям и частным предпринимателям Санкт-Петербурга (СПб) и Москвы большой выбор брусчатки из карельского гранита. Наши сотрудники специализируются на строительных материалах из природного камня и помогут подобрать оптимальный вариант под ваши задачи. </p>
+                            <p>Гранитная брусчатка относится к наиболее долговечным видам тротуарного и дорожного покрытия. Она устойчива к морозам, перепаду температур, выдерживает значительные нагрузки. К дополнительным преимуществам такого материала относится возможность создания уникальных покрытий, например комбинируя плитки различного цвета. Компания Дабл•Ю предлагает строительным компаниям и частным предпринимателям Санкт-Петербурга (СПб) и Москвы большой выбор брусчатки из карельского гранита. Наши сотрудники специализируются на строительных материалах из природного камня и помогут подобрать оптимальный вариант под ваши задачи. </p>
                         </div>
                     </div>
                 </div>
@@ -1657,6 +1736,26 @@
             <path fill="currentColor" d="M32,64H341.33a32,32,0,0,0,0-64H32a32,32,0,0,0,0,64Z"/>
             <path fill="currentColor" d="M341.33,149.33H32a32,32,0,0,0,0,64H341.33a32,32,0,0,0,0-64Z"/>
             <path fill="currentColor" d="M341.33,298.67H32a32,32,0,0,0,0,64H341.33a32,32,0,0,0,0-64Z"/>
+        </symbol>
+
+        <symbol id="svg-page-next" viewBox="0 0 304.76 286.17">
+            <path fill="currentColor"
+                  d="M292.27,112.92,179.43,0l-30.1,30.17L262.17,143.08,149.33,256l30.19,30.17L292.27,173.25A42.68,42.68,0,0,0,292.27,112.92Z"/>
+            <path fill="currentColor"
+                  d="M158.1,128,30.1,0,0,30.17,112.83,143.08,0,256l30.19,30.17,128-128A21.34,21.34,0,0,0,158.1,128Z"/>
+        </symbol>
+
+        <symbol id="svg-page-prev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 304.76 286.17">
+            <path fill="currentColor"
+                  d="M12.49,173.25,125.32,286.17,155.43,256,42.59,143.08,155.43,30.17,125.24,0,12.49,112.92A42.68,42.68,0,0,0,12.49,173.25Z"/>
+            <path fill="currentColor"
+                  d="M146.66,158.17l128,128L304.76,256,191.93,143.08,304.76,30.17,274.57,0l-128,128A21.34,21.34,0,0,0,146.66,158.17Z"/>
+        </symbol>
+
+        <symbol id="svg-filter" viewBox="0 0 512 512.05">
+            <path fill="currentColor" d="M21.33,101.36H79.7a79.53,79.53,0,0,0,153.49,0H490.67a21.34,21.34,0,0,0,0-42.67H233.19a79.53,79.53,0,0,0-153.49,0H21.33a21.34,21.34,0,0,0,0,42.67ZM156.44,42.69A37.34,37.34,0,1,1,119.1,80,37.33,37.33,0,0,1,156.44,42.69Z"/>
+            <path fill="currentColor" d="M490.67,234.69H432.3a79.51,79.51,0,0,0-153.47,0H21.33a21.34,21.34,0,0,0,0,42.67h257.5a79.51,79.51,0,0,0,153.47,0h58.37a21.34,21.34,0,0,0,0-42.67ZM355.56,293.36A37.34,37.34,0,1,1,392.9,256,37.33,37.33,0,0,1,355.56,293.36Z"/>
+            <path fill="currentColor" d="M490.67,410.69H233.19a79.53,79.53,0,0,0-153.49,0H21.33a21.34,21.34,0,0,0,0,42.67H79.7a79.53,79.53,0,0,0,153.49,0H490.67a21.34,21.34,0,0,0,0-42.67ZM156.44,469.36A37.34,37.34,0,1,1,193.77,432,37.34,37.34,0,0,1,156.44,469.36Z"/>
         </symbol>
     </svg>
 </div>
