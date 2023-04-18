@@ -482,6 +482,89 @@
   .catalog-page__filter-box__list-chek {
     padding-top: 11px;
   }
+  .product-folder.product-folder--list {
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 20px;
+    .product-folder__img {
+      width: 110px;
+      min-width: 110px;
+      height: 100px;
+      padding-right: 10px;
+    }
+    .product-folder__right {
+      padding-right: 0;
+      width: calc(100% - 110px);
+      min-height: 100px;
+      .product-folder__fav-list {
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        z-index: 2;
+        width: 40px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        background: #f3f3f3;
+        .product-folder__fav__text {
+          display: none;
+        }
+        svg {
+          margin-right: 0;
+        }
+        &:hover {
+          background: #e1e1e1;
+        }
+      }
+      .product-folder__body {
+        padding-right: 0;
+      }
+      .product-folder__props {
+        margin-bottom: 13px;
+      }
+    }
+    .product-folder__footer {
+      width: 100%;
+      padding-left: 110px;
+      padding-bottom: 0;
+
+      .product-folder__footer__btns {
+        position: relative;
+        padding-right: 50px;
+        .product-folder__col-count {
+          position: absolute;
+          z-index: 1;
+          bottom: 0;
+          right: 100%;
+          padding: 0 10px 0 0;
+          width: 110px;
+          min-width: 110px;
+          .product-folder__count__nav {
+            width: 24px;
+          }
+        }
+      }
+      .product-folder__prices {
+        height: auto;
+      }
+      .product-folder__status {
+        padding-bottom: 13px;
+      }
+      .product-folder__prices {
+        padding-bottom: 0;
+        margin-bottom: 20px;
+      }
+    }
+    .product-folder__props dd, .product-folder__props dt {
+      font-size: 11px;
+    }
+    .product-folder__footer--out-stock {
+      padding-top: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 575px) {
