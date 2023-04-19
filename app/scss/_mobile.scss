@@ -264,6 +264,40 @@
     height: 36px;
     font-size: 12px;
   }
+  .product__images__thumbnail {
+    display: none !important;
+  }
+  .product__images {
+    display: block;
+  }
+  .product__header .product-folder__labels {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    left: 10px;
+    flex-direction: column;
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  .product__section-cost__result {
+    padding: 10px 0 0 0;
+  }
+  .product__header {
+    padding-top: 0;
+    .product__title {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+  .product__section-btn .row {
+    flex-direction: column-reverse;
+    .product-folder__fav--btn {
+      margin-top: 10px;
+      height: 36px;
+    }
+  }
+
 }
 
 @media screen and (max-width: 768px) {

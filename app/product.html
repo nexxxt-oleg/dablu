@@ -19,9 +19,9 @@
         <div class="wrapper-page__body">
             <div class="product product-folder d-block">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-5 col-12">
                         <div class="product__images">
-                            <div class="product__images__thumbnail">
+                            <div class="product__images__thumbnail" id="thumbnailLeft">
                                 <button id="thumbnailPrev" class="sl-thumbnail__nav">
                                     <svg width="12" height="6">
                                         <use xlink:href="#svg-up"></use>
@@ -86,6 +86,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <button id="thumbnailNext" class="sl-thumbnail__nav">
+                                    <svg width="12" height="6">
+                                        <use xlink:href="#svg-down"></use>
+                                    </svg>
+                                </button>
                             </div>
 
                             <div class="product__images__big">
@@ -219,7 +224,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-7 col-12">
                         <header class="product__header">
                             <ul class="nav product-folder__labels">
                                 <li>
@@ -278,7 +283,6 @@
                             </div>
 
                         </div>
-
                         <div class="product__section-btn">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -296,8 +300,1146 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="product__section-info-link row">
+                            <div class="col-lg-4 col-6">
+                                <a href="" class="product__section-info-link__item info-link d-flex align-items-center">
+                                    <div class="info-link__ico">
+                                        <svg width="24" height="22">
+                                            <use xlink:href="#svg-delivery"></use>
+                                        </svg>
+                                    </div>
+                                    <span>Доставка</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-6">
+                                <a href="" class="product__section-info-link__item info-link d-flex align-items-center">
+                                    <div class="info-link__ico">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="#svg-montag"></use>
+                                        </svg>
+                                    </div>
+                                    <span>Монтаж</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-6">
+                                <a href="" class="product__section-info-link__item info-link d-flex align-items-center">
+                                    <div class="info-link__ico">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="#svg-pr-order"></use>
+                                        </svg>
+                                    </div>
+                                    <span>Проектная заявка</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-6">
+                                <a href="" class="product__section-info-link__item info-link d-flex align-items-center">
+                                    <div class="info-link__ico">
+                                        <svg width="24" height="20">
+                                            <use xlink:href="#svg-pay"></use>
+                                        </svg>
+                                    </div>
+                                    <span>Оплата</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-6">
+                                <a href="" class="product__section-info-link__item info-link d-flex align-items-center">
+                                    <div class="info-link__ico">
+                                        <svg width="24" height="24">
+                                            <use xlink:href="#svg-obrazec"></use>
+                                        </svg>
+                                    </div>
+                                    <span>Заказать образец</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-6">
+                                <a href="" class="product__section-info-link__item info-link d-flex align-items-center">
+                                    <div class="info-link__ico">
+                                        <svg width="24" height="20">
+                                            <use xlink:href="#svg-consult"></use>
+                                        </svg>
+                                    </div>
+                                    <span>Консультация</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="row fpad30">
+                    <div class="col-lg-6 fpad30 text">
+                        <div class="h2">Описание</div>
+                        <p>Гранитная брусчатка Габбро пилено-колотая (пиленые 2-4 боковые грани, верх колотый), размер
+                            100x100x50 мм. Гранитная брусчатка насыщенного черно-серого цвета. Колотые грани
+                            обеспечивают дополнительное антискольжение. Такая брусчатка подойдет как для частного, так и
+                            городского использования.
+                            <br>размер: 100х100х50
+                            <br>вес/м2: 156 кг
+                            <br>к-во/м2 82 шт.</p>
+                    </div>
+                    <div class="col-lg-6 fpad30">
+                        <div class="h2">Характеристики</div>
+                        <div id="propsList">
+                            <ul class="product__props nav flex-column">
+                                <li>
+                                    <span class="product__props__label">Цвет</span>
+                                    <span class="product__props__value">Черный</span>
+                                </li>
+
+                                <li>
+                                    <span class="product__props__label">Размер, мм</span>
+                                    <span class="product__props__value">100x100x50</span>
+                                </li>
+                                <li>
+                                    <span class="product__props__label">Фактура</span>
+                                    <span class="product__props__value">Пилено-колотая</span>
+                                </li>
+                                <li>
+                                    <span class="product__props__label">Цвет</span>
+                                    <span class="product__props__value">Черный</span>
+                                </li>
+
+                                <li>
+                                    <span class="product__props__label">Размер, мм</span>
+                                    <span class="product__props__value">100x100x50</span>
+                                </li>
+                                <li>
+                                    <span class="product__props__label">Фактура</span>
+                                    <span class="product__props__value">Пилено-колотая</span>
+                                </li>
+                                <li>
+                                    <span class="product__props__label">Цвет</span>
+                                    <span class="product__props__value">Черный</span>
+                                </li>
+
+                                <li>
+                                    <span class="product__props__label">Размер, мм</span>
+                                    <span class="product__props__value">100x100x50</span>
+                                </li>
+                                <li>
+                                    <span class="product__props__label">Фактура</span>
+                                    <span class="product__props__value">Пилено-колотая</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hr"></div>
+        <div class="tpad80">
+            <div class="mb-75">
+                <div class="h2">Вам понадобится с этим товаром</div>
+                <div class="slider-catalog ">
+                    <div class="swiper js-slider-cat">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-catalog__item product-folder">
+                                    <ul class="nav product-folder__labels">
+                                        <li>
+                                            <span class="product-folder__labels__item product-folder__labels__item--hit">ХИТ</span>
+                                        </li>
+                                    </ul>
+
+                                    <a href="" class="product-folder__img">
+                                        <picture>
+                                            <source srcset="images/dist/lot1.jpg, images/dist/lot1@2.jpg 2x"/>
+                                            <img
+                                                    src="images/dist/lot1.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                    <div class="product-folder__body">
+                                        <a href="" class="product-folder__title">
+                                            Гранитная брусчатка Габбро пилено-колотая (пиленые 2-4 боковые грани, верх
+                                            колотый)
+                                            Габбро пилено-колотая
+                                        </a>
+
+                                        <div class="product-folder__footer pt-15">
+                                            <div class="product-folder__status product-folder__status--in-stock">
+                                                Есть на складе
+                                            </div>
+                                            <div class="product-folder__prices">
+                                                <div class="product-folder__prices__col">
+                                                    <div class="product-folder__prices__val">
+                                                        3 920,00 <span class="currency">₽/м2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-folder__footer__btns">
+                                                <div class="product-folder__col-count">
+                                                    <div class="product-folder__count">
+                                                        <input type="text" value="1"
+                                                               class="product-folder__count__value">
+                                                        <button class="product-folder__count__nav product-folder__count__nav--plus">
+                                                            <svg width="8" height="8">
+                                                                <use xlink:href="#svg-plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="product-folder__count__nav product-folder__count__nav--minus">
+                                                            <svg width="8" height="2">
+                                                                <use xlink:href="#svg-minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-folder__col-bay">
+                                                    <button class="product-folder__btn-bay">В КОРЗИНУ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="product-folder__fav">
+                                        <svg width="13" height="12">
+                                            <use xlink:href="#svg-fav"></use>
+                                        </svg>
+                                        <span class="product-folder__fav__text">В избранное</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-catalog__item product-folder">
+                                    <ul class="nav product-folder__labels">
+                                        <li>
+                                            <span class="product-folder__labels__item product-folder__labels__item--hit">ХИТ</span>
+                                        </li>
+                                    </ul>
+
+                                    <a href="" class="product-folder__img">
+                                        <picture>
+                                            <source srcset="images/dist/lot1.jpg, images/dist/lot1@2.jpg 2x"/>
+                                            <img
+                                                    src="images/dist/lot1.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                    <div class="product-folder__body">
+                                        <a href="" class="product-folder__title">
+                                            Гранитная брусчатка Габбро пилено-колотая
+                                        </a>
+                                        <div class="product-folder__footer pt-15">
+                                            <div class="product-folder__status product-folder__status--in-stock">
+                                                Есть на складе
+                                            </div>
+                                            <div class="product-folder__prices">
+                                                <div class="product-folder__prices__col">
+                                                    <div class="product-folder__prices__val">
+                                                        3 920,00 <span class="currency">₽/м2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-folder__footer__btns">
+                                                <div class="product-folder__col-count">
+                                                    <div class="product-folder__count">
+                                                        <input type="text" value="1"
+                                                               class="product-folder__count__value">
+                                                        <button class="product-folder__count__nav product-folder__count__nav--plus">
+                                                            <svg width="8" height="8">
+                                                                <use xlink:href="#svg-plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="product-folder__count__nav product-folder__count__nav--minus">
+                                                            <svg width="8" height="2">
+                                                                <use xlink:href="#svg-minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-folder__col-bay">
+                                                    <button class="product-folder__btn-bay">В КОРЗИНУ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button class="product-folder__fav">
+                                        <svg width="13" height="12">
+                                            <use xlink:href="#svg-fav"></use>
+                                        </svg>
+                                        <span class="product-folder__fav__text">В избранное</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-catalog__item product-folder">
+                                    <ul class="nav product-folder__labels">
+                                        <li>
+                                            <span class="product-folder__labels__item product-folder__labels__item--hit">ХИТ</span>
+                                        </li>
+                                        <li>
+                                            <span class="product-folder__labels__item product-folder__labels__item--sale">-20%</span>
+                                        </li>
+                                    </ul>
+                                    <a href="" class="product-folder__img">
+                                        <picture>
+                                            <source srcset="images/dist/lot1.jpg, images/dist/lot1@2.jpg 2x"/>
+                                            <img
+                                                    src="images/dist/lot1.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                    <div class="product-folder__body">
+                                        <a href="" class="product-folder__title">
+                                            Гранитная брусчатка Габбро пилено-колотая (пиленые 2-4 боковые грани, верх
+                                            колотый)
+                                            Габбро пилено-колотая
+                                        </a>
+                                        <div class="product-folder__footer pt-15">
+                                            <div class="product-folder__status product-folder__status--under-order">
+                                                Под заказ
+                                            </div>
+                                            <div class="product-folder__prices">
+                                                <div class="product-folder__prices__col">
+                                                    <div class="product-folder__prices__old">
+                                                        3 921,00 <span class="currency">₽/м2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-folder__prices__col">
+                                                    <div class="product-folder__prices__val">
+                                                        3 920,00 <span class="currency">₽/м2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-folder__footer__btns">
+                                                <div class="product-folder__col-count">
+                                                    <div class="product-folder__count">
+                                                        <input type="text" value="1"
+                                                               class="product-folder__count__value">
+                                                        <button class="product-folder__count__nav product-folder__count__nav--plus">
+                                                            <svg width="8" height="8">
+                                                                <use xlink:href="#svg-plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="product-folder__count__nav product-folder__count__nav--minus">
+                                                            <svg width="8" height="2">
+                                                                <use xlink:href="#svg-minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-folder__col-bay">
+                                                    <button class="product-folder__btn-bay">В КОРЗИНУ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="product-folder__fav">
+                                        <svg width="13" height="12">
+                                            <use xlink:href="#svg-fav"></use>
+                                        </svg>
+                                        <span class="product-folder__fav__text">В избранное</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-catalog__item product-folder">
+                                    <ul class="nav product-folder__labels">
+                                        <li>
+                                            <span class="product-folder__labels__item product-folder__labels__item--hit">ХИТ</span>
+                                        </li>
+                                    </ul>
+                                    <a href="" class="product-folder__img">
+                                        <picture>
+                                            <source srcset="images/dist/lot1.jpg, images/dist/lot1@2.jpg 2x"/>
+                                            <img
+                                                    src="images/dist/lot1.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                    <div class="product-folder__body">
+                                        <a href="" class="product-folder__title">
+                                            Гранитная брусчатка Габбро пилено-колотая
+                                        </a>
+                                        <div class="product-folder__footer pt-15">
+                                            <div class="product-folder__status product-folder__status--in-stock">
+                                                Есть на складе
+                                            </div>
+                                            <div class="product-folder__prices">
+                                                <div class="product-folder__prices__col">
+                                                    <div class="product-folder__prices__val">
+                                                        3 920,00 <span class="currency">₽/м2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-folder__footer__btns">
+                                                <div class="product-folder__col-count">
+                                                    <div class="product-folder__count">
+                                                        <input type="text" value="1"
+                                                               class="product-folder__count__value">
+                                                        <button class="product-folder__count__nav product-folder__count__nav--plus">
+                                                            <svg width="8" height="8">
+                                                                <use xlink:href="#svg-plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="product-folder__count__nav product-folder__count__nav--minus">
+                                                            <svg width="8" height="2">
+                                                                <use xlink:href="#svg-minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-folder__col-bay">
+                                                    <button class="product-folder__btn-bay">В КОРЗИНУ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="product-folder__fav">
+                                        <svg width="13" height="12">
+                                            <use xlink:href="#svg-fav"></use>
+                                        </svg>
+                                        <span class="product-folder__fav__text">В избранное</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-catalog__item product-folder">
+                                    <ul class="nav product-folder__labels">
+                                        <li>
+                                            <span class="product-folder__labels__item product-folder__labels__item--hit">ХИТ</span>
+                                        </li>
+                                    </ul>
+                                    <a href="" class="product-folder__img">
+                                        <picture>
+                                            <source srcset="images/dist/lot1.jpg, images/dist/lot1@2.jpg 2x"/>
+                                            <img
+                                                    src="images/dist/lot1.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                    <div class="product-folder__body">
+                                        <a href="" class="product-folder__title">
+                                            Гранитная брусчатка Габбро пилено-колотая (пиленые 2-4 боковые грани, верх
+                                            колотый)
+                                            Габбро пилено-колотая
+                                        </a>
+
+                                        <div class="product-folder__footer pt-15">
+                                            <div class="product-folder__status product-folder__status--in-stock">
+                                                Есть на складе
+                                            </div>
+                                            <div class="product-folder__prices">
+                                                <div class="product-folder__prices__col">
+                                                    <div class="product-folder__prices__val">
+                                                        3 920,00 <span class="currency">₽/м2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-folder__footer__btns">
+                                                <div class="product-folder__col-count">
+                                                    <div class="product-folder__count">
+                                                        <input type="text" value="1"
+                                                               class="product-folder__count__value">
+                                                        <button class="product-folder__count__nav product-folder__count__nav--plus">
+                                                            <svg width="8" height="8">
+                                                                <use xlink:href="#svg-plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="product-folder__count__nav product-folder__count__nav--minus">
+                                                            <svg width="8" height="2">
+                                                                <use xlink:href="#svg-minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-folder__col-bay">
+                                                    <button class="product-folder__btn-bay">В КОРЗИНУ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="product-folder__fav">
+                                        <svg width="13" height="12">
+                                            <use xlink:href="#svg-fav"></use>
+                                        </svg>
+                                        <span class="product-folder__fav__text">В избранное</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-catalog__item product-folder">
+                                    <ul class="nav product-folder__labels">
+                                        <li>
+                                            <span class="product-folder__labels__item product-folder__labels__item--hit">ХИТ</span>
+                                        </li>
+                                    </ul>
+                                    <a href="" class="product-folder__img">
+                                        <picture>
+                                            <source srcset="images/dist/lot1.jpg, images/dist/lot1@2.jpg 2x"/>
+                                            <img
+                                                    src="images/dist/lot1.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                    <div class="product-folder__body">
+                                        <a href="" class="product-folder__title">
+                                            Гранитная брусчатка Габбро пилено-колотая
+                                        </a>
+                                        <div class="product-folder__footer pt-15">
+                                            <div class="product-folder__status product-folder__status--in-stock">
+                                                Есть на складе
+                                            </div>
+                                            <div class="product-folder__prices">
+                                                <div class="product-folder__prices__col">
+                                                    <div class="product-folder__prices__val">
+                                                        3 920,00 <span class="currency">₽/м2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-folder__footer__btns">
+                                                <div class="product-folder__col-count">
+                                                    <div class="product-folder__count">
+                                                        <input type="text" value="1"
+                                                               class="product-folder__count__value">
+                                                        <button class="product-folder__count__nav product-folder__count__nav--plus">
+                                                            <svg width="8" height="8">
+                                                                <use xlink:href="#svg-plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="product-folder__count__nav product-folder__count__nav--minus">
+                                                            <svg width="8" height="2">
+                                                                <use xlink:href="#svg-minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-folder__col-bay">
+                                                    <button class="product-folder__btn-bay">В КОРЗИНУ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="product-folder__fav">
+                                        <svg width="13" height="12">
+                                            <use xlink:href="#svg-fav"></use>
+                                        </svg>
+                                        <span class="product-folder__fav__text">В избранное</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="swiper-prev slider-nav swiper-button-disabled">
+                        <svg width="12" height="24">
+                            <use xlink:href="#svg-prev"></use>
+                        </svg>
+                    </button>
+                    <button class="swiper-next slider-nav swiper-button-disabled">
+                        <svg width="12" height="24">
+                            <use xlink:href="#svg-next"></use>
+                        </svg>
+                    </button>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+            <div class="mb-75">
+                <div class="h2">Аналогичные товары из разных ценовых категорий</div>
+                <div class="slider-catalog ">
+                    <div class="swiper js-slider-cat">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-catalog__item product-folder">
+                                    <ul class="nav product-folder__labels">
+                                        <li>
+                                            <span class="product-folder__labels__item product-folder__labels__item--hit">ХИТ</span>
+                                        </li>
+                                    </ul>
+
+                                    <a href="" class="product-folder__img">
+                                        <picture>
+                                            <source srcset="images/dist/lot1.jpg, images/dist/lot1@2.jpg 2x"/>
+                                            <img
+                                                    src="images/dist/lot1.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                    <div class="product-folder__body">
+                                        <a href="" class="product-folder__title">
+                                            Гранитная брусчатка Габбро пилено-колотая (пиленые 2-4 боковые грани, верх
+                                            колотый)
+                                            Габбро пилено-колотая
+                                        </a>
+                                        <dl class="product-folder__props">
+                                            <dt>Цвет</dt>
+                                            <dd>Черный</dd>
+
+                                            <dt>Размер, мм</dt>
+                                            <dd>100x100x50</dd>
+
+                                            <dt>Фактура</dt>
+                                            <dd>Пилено-колотая</dd>
+                                        </dl>
+                                        <div class="product-folder__footer">
+                                            <div class="product-folder__status product-folder__status--in-stock">
+                                                Есть на складе
+                                            </div>
+                                            <div class="product-folder__prices">
+                                                <div class="product-folder__prices__col">
+                                                    <div class="product-folder__prices__val">
+                                                        3 920,00 <span class="currency">₽/м2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-folder__footer__btns">
+                                                <div class="product-folder__col-count">
+                                                    <div class="product-folder__count">
+                                                        <input type="text" value="1"
+                                                               class="product-folder__count__value">
+                                                        <button class="product-folder__count__nav product-folder__count__nav--plus">
+                                                            <svg width="8" height="8">
+                                                                <use xlink:href="#svg-plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="product-folder__count__nav product-folder__count__nav--minus">
+                                                            <svg width="8" height="2">
+                                                                <use xlink:href="#svg-minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-folder__col-bay">
+                                                    <button class="product-folder__btn-bay">В КОРЗИНУ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="product-folder__fav">
+                                        <svg width="13" height="12">
+                                            <use xlink:href="#svg-fav"></use>
+                                        </svg>
+                                        <span class="product-folder__fav__text">В избранное</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-catalog__item product-folder">
+                                    <ul class="nav product-folder__labels">
+                                        <li>
+                                            <span class="product-folder__labels__item product-folder__labels__item--hit">ХИТ</span>
+                                        </li>
+                                    </ul>
+
+                                    <a href="" class="product-folder__img">
+                                        <picture>
+                                            <source srcset="images/dist/lot1.jpg, images/dist/lot1@2.jpg 2x"/>
+                                            <img
+                                                    src="images/dist/lot1.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                    <div class="product-folder__body">
+                                        <a href="" class="product-folder__title">
+                                            Гранитная брусчатка Габбро пилено-колотая
+                                        </a>
+                                        <dl class="product-folder__props">
+                                            <dt>Цвет</dt>
+                                            <dd>Черный</dd>
+
+                                            <dt>Размер, мм</dt>
+                                            <dd>100x100x50</dd>
+
+                                            <dt>Фактура</dt>
+                                            <dd>Пилено-колотая</dd>
+                                        </dl>
+                                        <div class="product-folder__footer">
+                                            <div class="product-folder__status product-folder__status--in-stock">
+                                                Есть на складе
+                                            </div>
+                                            <div class="product-folder__prices">
+                                                <div class="product-folder__prices__col">
+                                                    <div class="product-folder__prices__val">
+                                                        3 920,00 <span class="currency">₽/м2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-folder__footer__btns">
+                                                <div class="product-folder__col-count">
+                                                    <div class="product-folder__count">
+                                                        <input type="text" value="1"
+                                                               class="product-folder__count__value">
+                                                        <button class="product-folder__count__nav product-folder__count__nav--plus">
+                                                            <svg width="8" height="8">
+                                                                <use xlink:href="#svg-plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="product-folder__count__nav product-folder__count__nav--minus">
+                                                            <svg width="8" height="2">
+                                                                <use xlink:href="#svg-minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-folder__col-bay">
+                                                    <button class="product-folder__btn-bay">В КОРЗИНУ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button class="product-folder__fav">
+                                        <svg width="13" height="12">
+                                            <use xlink:href="#svg-fav"></use>
+                                        </svg>
+                                        <span class="product-folder__fav__text">В избранное</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-catalog__item product-folder">
+                                    <ul class="nav product-folder__labels">
+                                        <li>
+                                            <span class="product-folder__labels__item product-folder__labels__item--hit">ХИТ</span>
+                                        </li>
+                                        <li>
+                                            <span class="product-folder__labels__item product-folder__labels__item--sale">-20%</span>
+                                        </li>
+                                    </ul>
+                                    <a href="" class="product-folder__img">
+                                        <picture>
+                                            <source srcset="images/dist/lot1.jpg, images/dist/lot1@2.jpg 2x"/>
+                                            <img
+                                                    src="images/dist/lot1.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                    <div class="product-folder__body">
+                                        <a href="" class="product-folder__title">
+                                            Гранитная брусчатка Габбро пилено-колотая (пиленые 2-4 боковые грани, верх
+                                            колотый)
+                                            Габбро пилено-колотая
+                                        </a>
+                                        <dl class="product-folder__props">
+                                            <dt>Цвет</dt>
+                                            <dd>Черный</dd>
+
+                                            <dt>Размер, мм</dt>
+                                            <dd>100x100x50</dd>
+
+                                            <dt>Фактура</dt>
+                                            <dd>Пилено-колотая</dd>
+                                        </dl>
+                                        <div class="product-folder__footer">
+                                            <div class="product-folder__status product-folder__status--under-order">
+                                                Под заказ
+                                            </div>
+                                            <div class="product-folder__prices">
+                                                <div class="product-folder__prices__col">
+                                                    <div class="product-folder__prices__old">
+                                                        3 921,00 <span class="currency">₽/м2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-folder__prices__col">
+                                                    <div class="product-folder__prices__val">
+                                                        3 920,00 <span class="currency">₽/м2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-folder__footer__btns">
+                                                <div class="product-folder__col-count">
+                                                    <div class="product-folder__count">
+                                                        <input type="text" value="1"
+                                                               class="product-folder__count__value">
+                                                        <button class="product-folder__count__nav product-folder__count__nav--plus">
+                                                            <svg width="8" height="8">
+                                                                <use xlink:href="#svg-plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="product-folder__count__nav product-folder__count__nav--minus">
+                                                            <svg width="8" height="2">
+                                                                <use xlink:href="#svg-minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-folder__col-bay">
+                                                    <button class="product-folder__btn-bay">В КОРЗИНУ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="product-folder__fav">
+                                        <svg width="13" height="12">
+                                            <use xlink:href="#svg-fav"></use>
+                                        </svg>
+                                        <span class="product-folder__fav__text">В избранное</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-catalog__item product-folder">
+                                    <ul class="nav product-folder__labels">
+                                        <li>
+                                            <span class="product-folder__labels__item product-folder__labels__item--hit">ХИТ</span>
+                                        </li>
+                                    </ul>
+                                    <a href="" class="product-folder__img">
+                                        <picture>
+                                            <source srcset="images/dist/lot1.jpg, images/dist/lot1@2.jpg 2x"/>
+                                            <img
+                                                    src="images/dist/lot1.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                    <div class="product-folder__body">
+                                        <a href="" class="product-folder__title">
+                                            Гранитная брусчатка Габбро пилено-колотая
+                                        </a>
+                                        <dl class="product-folder__props">
+                                            <dt>Цвет</dt>
+                                            <dd>Черный</dd>
+
+                                            <dt>Размер, мм</dt>
+                                            <dd>100x100x50</dd>
+
+                                            <dt>Фактура</dt>
+                                            <dd>Пилено-колотая</dd>
+                                        </dl>
+                                        <div class="product-folder__footer">
+                                            <div class="product-folder__status product-folder__status--in-stock">
+                                                Есть на складе
+                                            </div>
+                                            <div class="product-folder__prices">
+                                                <div class="product-folder__prices__col">
+                                                    <div class="product-folder__prices__val">
+                                                        3 920,00 <span class="currency">₽/м2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-folder__footer__btns">
+                                                <div class="product-folder__col-count">
+                                                    <div class="product-folder__count">
+                                                        <input type="text" value="1"
+                                                               class="product-folder__count__value">
+                                                        <button class="product-folder__count__nav product-folder__count__nav--plus">
+                                                            <svg width="8" height="8">
+                                                                <use xlink:href="#svg-plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="product-folder__count__nav product-folder__count__nav--minus">
+                                                            <svg width="8" height="2">
+                                                                <use xlink:href="#svg-minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-folder__col-bay">
+                                                    <button class="product-folder__btn-bay">В КОРЗИНУ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="product-folder__fav">
+                                        <svg width="13" height="12">
+                                            <use xlink:href="#svg-fav"></use>
+                                        </svg>
+                                        <span class="product-folder__fav__text">В избранное</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-catalog__item product-folder">
+                                    <ul class="nav product-folder__labels">
+                                        <li>
+                                            <span class="product-folder__labels__item product-folder__labels__item--hit">ХИТ</span>
+                                        </li>
+                                    </ul>
+                                    <a href="" class="product-folder__img">
+                                        <picture>
+                                            <source srcset="images/dist/lot1.jpg, images/dist/lot1@2.jpg 2x"/>
+                                            <img
+                                                    src="images/dist/lot1.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                    <div class="product-folder__body">
+                                        <a href="" class="product-folder__title">
+                                            Гранитная брусчатка Габбро пилено-колотая (пиленые 2-4 боковые грани, верх
+                                            колотый)
+                                            Габбро пилено-колотая
+                                        </a>
+                                        <dl class="product-folder__props">
+                                            <dt>Цвет</dt>
+                                            <dd>Черный</dd>
+
+                                            <dt>Размер, мм</dt>
+                                            <dd>100x100x50</dd>
+
+                                            <dt>Фактура</dt>
+                                            <dd>Пилено-колотая</dd>
+                                        </dl>
+                                        <div class="product-folder__footer">
+                                            <div class="product-folder__status product-folder__status--in-stock">
+                                                Есть на складе
+                                            </div>
+                                            <div class="product-folder__prices">
+                                                <div class="product-folder__prices__col">
+                                                    <div class="product-folder__prices__val">
+                                                        3 920,00 <span class="currency">₽/м2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-folder__footer__btns">
+                                                <div class="product-folder__col-count">
+                                                    <div class="product-folder__count">
+                                                        <input type="text" value="1"
+                                                               class="product-folder__count__value">
+                                                        <button class="product-folder__count__nav product-folder__count__nav--plus">
+                                                            <svg width="8" height="8">
+                                                                <use xlink:href="#svg-plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="product-folder__count__nav product-folder__count__nav--minus">
+                                                            <svg width="8" height="2">
+                                                                <use xlink:href="#svg-minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-folder__col-bay">
+                                                    <button class="product-folder__btn-bay">В КОРЗИНУ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="product-folder__fav">
+                                        <svg width="13" height="12">
+                                            <use xlink:href="#svg-fav"></use>
+                                        </svg>
+                                        <span class="product-folder__fav__text">В избранное</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-catalog__item product-folder">
+                                    <ul class="nav product-folder__labels">
+                                        <li>
+                                            <span class="product-folder__labels__item product-folder__labels__item--hit">ХИТ</span>
+                                        </li>
+                                    </ul>
+                                    <a href="" class="product-folder__img">
+                                        <picture>
+                                            <source srcset="images/dist/lot1.jpg, images/dist/lot1@2.jpg 2x"/>
+                                            <img
+                                                    src="images/dist/lot1.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                    <div class="product-folder__body">
+                                        <a href="" class="product-folder__title">
+                                            Гранитная брусчатка Габбро пилено-колотая
+                                        </a>
+                                        <dl class="product-folder__props">
+                                            <dt>Цвет</dt>
+                                            <dd>Черный</dd>
+
+                                            <dt>Размер, мм</dt>
+                                            <dd>100x100x50</dd>
+
+                                            <dt>Фактура</dt>
+                                            <dd>Пилено-колотая</dd>
+                                        </dl>
+                                        <div class="product-folder__footer">
+                                            <div class="product-folder__status product-folder__status--in-stock">
+                                                Есть на складе
+                                            </div>
+                                            <div class="product-folder__prices">
+                                                <div class="product-folder__prices__col">
+                                                    <div class="product-folder__prices__val">
+                                                        3 920,00 <span class="currency">₽/м2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="product-folder__footer__btns">
+                                                <div class="product-folder__col-count">
+                                                    <div class="product-folder__count">
+                                                        <input type="text" value="1"
+                                                               class="product-folder__count__value">
+                                                        <button class="product-folder__count__nav product-folder__count__nav--plus">
+                                                            <svg width="8" height="8">
+                                                                <use xlink:href="#svg-plus"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="product-folder__count__nav product-folder__count__nav--minus">
+                                                            <svg width="8" height="2">
+                                                                <use xlink:href="#svg-minus"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-folder__col-bay">
+                                                    <button class="product-folder__btn-bay">В КОРЗИНУ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="product-folder__fav">
+                                        <svg width="13" height="12">
+                                            <use xlink:href="#svg-fav"></use>
+                                        </svg>
+                                        <span class="product-folder__fav__text">В избранное</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="swiper-prev slider-nav swiper-button-disabled">
+                        <svg width="12" height="24">
+                            <use xlink:href="#svg-prev"></use>
+                        </svg>
+                    </button>
+                    <button class="swiper-next slider-nav swiper-button-disabled">
+                        <svg width="12" height="24">
+                            <use xlink:href="#svg-next"></use>
+                        </svg>
+                    </button>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hr"></div>
+        <div class="tpad80 fpad80">
+            <div class="h2">Ранее вы смотрели</div>
+            <div class="slider-watched">
+                <div class="swiper" id="watchedSlider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="" class="slider-watched__item product-folder">
+                                <div class="slider-watched__item__img">
+                                    <img src="images/dist/min-lot2.jpg" alt="">
+                                </div>
+                                <div class="slider-watched__item__body">
+                                    <div class="product-folder__title">
+                                        Гранитная брусчатка Габбро пилено-колотая (пиленые 2-4 боковые грани, верх
+                                        колотый)
+                                        Габбро пилено-колотая
+                                    </div>
+                                    <div class="product-folder__footer">
+                                        <div class="product-folder__status product-folder__status--in-stock">
+                                            Есть на складе
+                                        </div>
+                                        <div class="product-folder__prices">
+                                            <div class="product-folder__prices__col">
+                                                <div class="product-folder__prices__val">
+                                                    3 920,00 <span class="currency">₽/м2</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="slider-watched__item product-folder">
+                                <div class="slider-watched__item__img">
+                                    <img src="images/dist/min-lot2.jpg" alt="">
+                                </div>
+                                <div class="slider-watched__item__body">
+                                    <div class="product-folder__title">
+                                        Гранитная брусчатка Габбро пилено-колотая (пиленые 2-4 боковые грани, верх
+                                        колотый)
+                                        Габбро пилено-колотая
+                                    </div>
+                                    <div class="product-folder__footer">
+                                        <div class="product-folder__status product-folder__status--in-stock">
+                                            Есть на складе
+                                        </div>
+                                        <div class="product-folder__prices">
+                                            <div class="product-folder__prices__col">
+                                                <div class="product-folder__prices__old">
+                                                    3 921,00 <span class="currency">₽/м2</span>
+                                                </div>
+                                            </div>
+                                            <div class="product-folder__prices__col">
+                                                <div class="product-folder__prices__val">
+                                                    3 920,00 <span class="currency">₽/м2</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="slider-watched__item product-folder">
+                                <div class="slider-watched__item__img">
+                                    <img src="images/dist/min-lot2.jpg" alt="">
+                                </div>
+                                <div class="slider-watched__item__body">
+                                    <div class="product-folder__title">
+                                        Гранитная брусчатка Габбро пилено-колотая (пиленые 2-4 боковые грани, верх
+                                        колотый)
+                                        Габбро пилено-колотая
+                                    </div>
+                                    <div class="product-folder__footer">
+                                        <div class="product-folder__status product-folder__status--in-stock">
+                                            Есть на складе
+                                        </div>
+                                        <div class="product-folder__prices">
+                                            <div class="product-folder__prices__col">
+                                                <div class="product-folder__prices__val">
+                                                    3 920,00 <span class="currency">₽/м2</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="slider-watched__item product-folder">
+                                <div class="slider-watched__item__img">
+                                    <img src="images/dist/min-lot2.jpg" alt="">
+                                </div>
+                                <div class="slider-watched__item__body">
+                                    <div class="product-folder__title">
+                                        Гранитная брусчатка Габбро пилено-колотая (пиленые 2-4 боковые грани, верх
+                                        колотый)
+                                        Габбро пилено-колотая
+                                    </div>
+                                    <div class="product-folder__footer">
+                                        <div class="product-folder__status product-folder__status--in-stock">
+                                            Есть на складе
+                                        </div>
+                                        <div class="product-folder__prices">
+                                            <div class="product-folder__prices__col">
+                                                <div class="product-folder__prices__val">
+                                                    3 920,00 <span class="currency">₽/м2</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="" class="slider-watched__item product-folder">
+                                <div class="slider-watched__item__img">
+                                    <img src="images/dist/min-lot2.jpg" alt="">
+                                </div>
+                                <div class="slider-watched__item__body">
+                                    <div class="product-folder__title">
+                                        Гранитная брусчатка Габбро пилено-колотая (пиленые 2-4 боковые грани, верх
+                                        колотый)
+                                        Габбро пилено-колотая
+                                    </div>
+                                    <div class="product-folder__footer">
+                                        <div class="product-folder__status product-folder__status--in-stock">
+                                            Есть на складе
+                                        </div>
+                                        <div class="product-folder__prices">
+                                            <div class="product-folder__prices__col">
+                                                <div class="product-folder__prices__val">
+                                                    3 920,00 <span class="currency">₽/м2</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="swiper-prev slider-nav swiper-button-disabled" id="watchedSliderPrev">
+                    <svg width="12" height="24">
+                        <use xlink:href="#svg-prev"></use>
+                    </svg>
+                </button>
+                <button class="swiper-next slider-nav swiper-button-disabled" id="watchedSliderNext">
+                    <svg width="12" height="24">
+                        <use xlink:href="#svg-next"></use>
+                    </svg>
+                </button>
+                <div class="swiper-scrollbar"></div>
             </div>
         </div>
     </div>
