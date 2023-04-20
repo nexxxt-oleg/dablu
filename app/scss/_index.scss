@@ -2133,6 +2133,19 @@ input:active {
   font-weight: 500;
   text-transform: none;
 
+  span {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 5px 15px;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 400;
+    background: #f3f3f3;
+    margin-top: -5px;
+  }
+
   i {
     margin-left: 8px;
     margin-bottom: 1px;
@@ -2620,4 +2633,43 @@ input:active {
 
 .slider-watched .swiper-slide {
   width: 270px;
+}
+.product__images__big .swiper-pagination {
+  display: none;
+}
+.link-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 48px;
+  border-radius: 5px;
+  text-decoration: none;
+  background: #546770;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.btn-silver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 48px;
+  border-radius: 5px;
+  text-decoration: none;
+  background: #f3f3f3;
+  color: #231f20;
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  &:hover {
+    opacity: 0.8;
+  }
 }

@@ -195,6 +195,18 @@
 }
 
 @media screen and (max-width: 991px) {
+  .slider-watched__item {
+    .product-folder__prices {
+      margin-bottom: 0 !important;
+    }
+    .product-folder__footer {
+      padding-bottom: 0;
+
+    }
+    .slider-watched__item__body {
+      padding-top: 0;
+    }
+  }
   .footer__col-logo {
     order: -2;
   }
@@ -260,7 +272,11 @@
     border-radius: 0 4px 4px 0;
     width: 36px;
   }
-  .product-folder__btn-bay {
+  .product__section-btn .product-folder__btn-bay {
+    height: 46px;
+    font-size: 14px;
+  }
+  .product-folder__col-bay .product-folder__btn-bay {
     height: 36px;
     font-size: 12px;
   }
@@ -294,10 +310,40 @@
     flex-direction: column-reverse;
     .product-folder__fav--btn {
       margin-top: 10px;
-      height: 36px;
+      height: 46px;
+      background: #f3f3f3;
+      svg {
+        width: 18px;
+        height: 16px;
+      }
     }
   }
-
+  .product__images__big .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    padding-top: 10px;
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      margin: 0 4px 4px;
+      opacity: 1;
+      background: #eef0f0;
+      &.swiper-pagination-bullet-active {
+        background: #546770;
+      }
+    }
+  }
+  .product__header .product-folder__status {
+    padding-top: 15px;
+  }
+  .product__header {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -649,12 +695,12 @@
     padding-right: 10px;
 
     .row {
-      margin-left: -10px;
-      margin-right: -10px;
+      margin-left: -5px;
+      margin-right: -5px;
 
       & > * {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
       }
     }
   }
@@ -1014,10 +1060,13 @@
   }
 
   .wrapper-page {
-    padding-top: 15px;
+    padding-top: 10px;
   }
   .wrapper-page__breadcrumbs {
     padding-bottom: 15px;
+    li {
+      padding-bottom: 0;
+    }
   }
   .wrapper-page__header {
     padding-bottom: 15px;
@@ -1074,5 +1123,110 @@
   }
   .mob-fpad20 {
     padding-bottom: 20px;
+  }
+  .product__images {
+    padding-bottom: 10px;
+  }
+  .product__header .product-folder__status {
+    padding-top: 9px;
+  }
+  .product__header {
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+  }
+  .product__section-cost__row {
+    display: block;
+    .product-folder__prices {
+      display: flex !important;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      .product-folder__prices__old  {
+        float: right;
+      }
+    }
+  }
+  .product__section-cost__quantity {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  .product__section-cost__result__label {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .product__section-cost {
+    padding-bottom: 13px;
+  }
+  .product__section-btn {
+    padding-bottom: 18px;
+    margin-bottom: 25px;
+  }
+  .product__section-info-link__item {
+    padding-bottom: 0;
+    margin-bottom: 18px;
+    height: 25px;
+  }
+  .product__section-info-link .info-link {
+    font-size: 12px;
+  }
+  .product__section-info-link {
+    padding-bottom: 20px;
+  }
+  .h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .text li, .text p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .product__props li {
+    padding: 5px 0;
+    span {
+      font-size: 12px;
+    }
+  }
+  .js-more-link {
+    padding-top: 10px;
+  }
+  .tpad80 {
+    padding-top: 30px;
+  }
+  .product {
+    padding-bottom: 30px;
+  }
+  .slider-watched__item {
+    padding-top: 15px;
+    .product-folder__prices {
+
+    }
+  }
+  #watchedSlider {
+    overflow: visible;
+  }
+  .fpad80 {
+    padding-bottom: 40px;
+  }
+  .modal-dialog.modal-dialog__form .modal-content {
+    padding: 20px;
+  }
+  .modal-dialog__title {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 15px;
+  }
+  .modal-dialog.modal-dialog__form .modal-content .close {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+  }
+  .mob-fpad15 {
+    margin-bottom: 15px;
+  }
+  .link-cart,
+  .btn-silver {
+    height: 36px;
+    font-size: 12px;
   }
 }
