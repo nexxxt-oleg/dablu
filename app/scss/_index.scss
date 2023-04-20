@@ -2638,12 +2638,13 @@ input:active {
   display: none;
 }
 .link-cart {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   height: 48px;
   border-radius: 5px;
+  padding: 5px 35px;
   text-decoration: none;
   background: #546770;
   color: #fff;
@@ -2656,7 +2657,8 @@ input:active {
   }
 }
 .btn-silver {
-  display: flex;
+  display: inline-flex;
+  padding: 5px 35px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -2671,5 +2673,40 @@ input:active {
   font-weight: 500;
   &:hover {
     opacity: 0.8;
+  }
+}
+.wrapper-page__fav-empty {
+  text-align: center;
+  margin-bottom: 135px;
+  &__ico {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    border-radius: 40px;
+    background: #faab19;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 25px;
+    &::after {
+      content: "";
+      display: block;
+      margin: 25px auto 0;
+      width: 60px;
+      height: 2px;
+      background: #faab19;
+    }
+  }
+  p {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }

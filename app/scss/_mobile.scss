@@ -1264,4 +1264,20 @@
       padding-left: 10px;
     }
   }
+  .wrapper-page__fav-empty {
+    margin-bottom: 70px;
+    h1 {
+      font-size: 24px;
+      span {
+        display: block;
+      }
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .link-cart {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
