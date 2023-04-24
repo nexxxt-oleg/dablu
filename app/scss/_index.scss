@@ -114,23 +114,7 @@ body {
           color: #231f20;
           vertical-align: top;
 
-          .number {
-            position: absolute;
-            left: 50%;
-            top: -5px;
-            min-width: 18px;
-            height: 18px;
-            border-radius: 9px;
-            display: inline-flex;
-            padding: 3px 5px;
-            text-align: center;
-            align-items: center;
-            color: #231f20;
-            font-size: 12px;
-            line-height: 1;
-            font-weight: 500;
-            background: #faab19;
-          }
+
 
           &:hover,
           &:focus {
@@ -267,6 +251,7 @@ body {
     z-index: 10;
     top: 87px;
     left: 100px;
+    max-width: 400px;
   }
 
   &__title {
@@ -2838,7 +2823,7 @@ input:active {
   &__letter-spisok {
     flex-grow: 1;
     padding-left: 35px;
-    margin-top: -5px;
+    margin-top: -6px;
     margin-bottom: -5px;
     li {
       padding-top: 5px;
@@ -2860,4 +2845,85 @@ input:active {
 }
 .currency {
   white-space: nowrap;
+}
+.header__middle__right__col2 {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  & > div {
+    width: 50%;
+  }
+}
+.header__middle__link {
+  color: #231f20;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  vertical-align: top;
+  .number {
+    position: absolute;
+    left: 50%;
+    top: -5px;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    display: inline-flex;
+    padding: 3px 5px;
+    text-align: center;
+    align-items: center;
+    color: #231f20;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 500;
+    background: #faab19;
+  }
+}
+.product-folder__prices__val {
+  white-space: nowrap;
+}
+.col-text-brand {
+  padding-bottom: 55px;
+
+  .text {
+    max-width: 800px;
+  }
+}
+.col-logo-brand {
+  margin-top: -5px;
+  padding-bottom: 55px;
+  &__wrap {
+    height: 140px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eef0f0;
+  }
+}
+.wrapper-page__brand-group__title {
+  padding-bottom: 35px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.wrapper-page__brand-group__count {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 18px;
+  height: 18px;
+  min-width: 36px;
+  padding: 0 5px;
+  border-radius: 5px;
+  background: #f3f3f3;
+  margin-left: 5px;
+  margin-top: 5px;
+  vertical-align: top;
+}
+.wrapper-page__brand-group {
+  padding-bottom: 45px;
+  &__footer {
+    margin-top: -8px;
+  }
 }
