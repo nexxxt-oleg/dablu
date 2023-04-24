@@ -1,0 +1,130 @@
+<!--#set var="title" value="Бренды" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="wrapper-page">
+    <div class="container">
+        <div class="wrapper-page__breadcrumbs">
+            <ul class="nav nav--breadcrumbs">
+                <li>
+                    <a href="">Главная</a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper-page__header">
+            <h1 class="text-uppercase">Торговые марки</h1>
+        </div>
+        <div class="text">
+            <p>Наша компания представляет продукты следующих торговых марок</p>
+        </div>
+        <div class="wrapper-page__brands">
+            <div class="wrapper-page__brands__header">
+                <div class="wrapper-page__brands__header__group">
+                    <button data-filter="all">Все</button>
+                </div>
+                <ul class="nav wrapper-page__brands__header__group">
+                    <li>
+                        <button data-filter="[data-letter='A']">A</button>
+                    </li>
+                    <li>
+                        <button data-filter="[data-letter='B']">B</button>
+                    </li>
+                    <li>
+                        <button data-filter="[data-letter='C']">C</button>
+                    </li>
+                </ul>
+                <ul class="nav wrapper-page__brands__header__group">
+                    <li>
+                        <button data-filter="[data-letter='Б']">Б</button>
+                    </li>
+                    <li>
+                        <button data-filter="[data-letter='В']">В</button>
+                    </li>
+                    <li>
+                        <button data-filter="[data-letter='Г']">Г</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="wrapper-page__brands__body brands-list" id="brandsList">
+                <div class="wrapper-page__brands__body__caption">Список брендов A-Z</div>
+
+                <div class="mix" data-letter="A">
+                    <div class="brands-list__item">
+                        <div class="brands-list__item__letter">
+                            A
+                        </div>
+                        <ul class="nav brands-list__item__letter-spisok">
+                            <li><a href="">ABC Klinkergruppe (Германия)</a></li>
+                            <li><a href="">Aquasystem (Россия)</a></li>
+                            <li><a href="">Atlas Concorde (Россия)</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mix" data-letter="B">
+                    <div class="brands-list__item">
+                        <div class="brands-list__item__letter">
+                            B
+                        </div>
+                        <ul class="nav brands-list__item__letter-spisok">
+                            <li><a href="">Baltic Tile (Россия)</a></li>
+                            <li><a href="">Baut (Литва)</a></li>
+                            <li><a href="">Bever (Германия)</a></li>
+                            <li><a href="">Borge (Россия)</a></li>
+                            <li><a href="">Braas (Германия, Россия)</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mix" data-letter="C">
+                    <div class="brands-list__item">
+                        <div class="brands-list__item__letter">
+                            C
+                        </div>
+                        <ul class="nav brands-list__item__letter-spisok">
+                            <li><a href="">Caparol (Германия)</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="wrapper-page__brands__body__caption">Список брендов A-Я</div>
+
+                <div class="mix" data-letter="Б">
+                    <div class="brands-list__item">
+                        <div class="brands-list__item__letter">
+                            Б
+                        </div>
+                        <ul class="nav brands-list__item__letter-spisok">
+                            <li><a href="">Богандинский Кирпичный завод (Россия)</a></li>
+                            <li><a href="">Боровичский Комбинат Огнеупоров (Россия)</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mix" data-letter="В">
+                    <div class="brands-list__item">
+                        <div class="brands-list__item__letter">
+                            В
+                        </div>
+                        <ul class="nav brands-list__item__letter-spisok">
+                            <li><a href="">Воротынский КЗ (Россия)</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mix" data-letter="Г">
+                    <div class="brands-list__item">
+                        <div class="brands-list__item__letter">
+                            Г
+                        </div>
+                        <ul class="nav brands-list__item__letter-spisok">
+                            <li><a href="">Гален (Россия)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--#include virtual="/parts/footer.html" -->
