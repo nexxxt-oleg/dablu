@@ -384,6 +384,9 @@
   .brands-list__item__letter-spisok li {
     width: 50%;
   }
+  .wrapper-page__order__options__more-link {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -816,6 +819,34 @@
   }
   .delivery-tabs{
     margin-bottom: 30px;
+  }
+  .wrapper-page__cart__col-count {
+    margin-bottom: 15px;
+  }
+  .wrapper-page__cart__col-count .product-folder__count {
+    flex-grow: 1;
+  }
+  .wrapper-page__cart__footer {
+    margin: 0 -15px 39px;
+    padding: 0 15px;
+  }
+  .wrapper-page__fav.wrapper-page__cart {
+    margin-bottom: 0;
+  }
+  .wrapper-page__order__title {
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 15px;
+  }
+  .wrapper-page__order__section {
+    padding-top: 15px;
+  }
+  .wrapper-page__order__section__caption {
+    font-size: 18px;
+  }
+  .wrapper-page__order__section__text {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
 
@@ -1434,8 +1465,8 @@
     padding-left: 25px;
     padding-right: 25px;
   }
-  .wrapper-page__header__icons li {
-    padding-left: 10px;
+  .wrapper-page__header__icons > li {
+    margin-left: 10px;
   }
   .product-folder-fav {
     padding-left: 90px;
@@ -1532,5 +1563,58 @@
   }
   .banner-help.banner-help--min .header__middle__phones__row span {
     font-size: 12px;
+  }
+  .dropdown__sharing__ico {
+    opacity: 1;
+  }
+  .wrapper-page__cart__item__unit {
+    display: none;
+  }
+  .wrapper-page__order__options__item__value__title {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .wrapper-page__order__options__item__value__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .wrapper-page__order__ps{
+    padding-bottom: 17px;
+  }
+  .form-input__value {
+    height: 36px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+  }
+  .form-input {
+    padding-bottom: 18px;
+  }
+  .form-input__label {
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 4px;
+  }
+  .form-input__alert {
+    bottom: 3px;
+  }
+  .btn-big.product-folder__btn-bay {
+    height: 46px;
+  }
+  .wrapper-page__cart__footer__count {
+    font-size: 12px;
+  }
+  .wrapper-page__order__section__header {
+    padding-bottom: 16px;
+  }
+  .wrapper-page__order__options__item__value {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  .form-input textarea.form-input__value {
+    height: 90px;
+  }
+  .wrapper-page__order {
+    padding-bottom: 37px;
   }
 }
