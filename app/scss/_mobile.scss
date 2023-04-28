@@ -848,6 +848,50 @@
     font-size: 12px;
     line-height: 16px;
   }
+  .header-cat-list {
+    padding-top: 8px;
+    padding-bottom: 13px;
+    display: block;
+    &__label {
+      padding-bottom: 3px;
+      padding-right: 0;
+      font-size: 12px;
+    }
+    .nav {
+      flex-wrap: nowrap;
+    }
+    &__wrap {
+      overflow: visible;
+    }
+    &__link {
+      font-size: 12px;
+      height: 24px;
+      padding: 0 9px;
+    }
+  }
+  .articles__item__title {
+    padding-top: 12px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .articles__item {
+    margin-bottom: 25px;
+  }
+  .article__cat {
+    font-size: 12px;
+  }
+  .article__header h1 {
+    font-size: 24px;
+  }
+  .article__body img {
+    margin-bottom: 15px;
+  }
+  .article__header {
+    padding-bottom: 15px;
+  }
+  .article__body {
+    padding-bottom: 35px;
+  }
 }
 
 @media screen and (max-width: 575px) {
