@@ -896,6 +896,16 @@
     font-size: 16px !important;
     line-height: 20px !important;
   }
+  .mob-tpad0 {
+    padding-top: 0;
+  }
+  .sb-form__title {
+    font-size: 18px;
+  }
+  .sb-form__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -905,6 +915,9 @@
   }
   .product-folder__prices {
     height: 35px;
+  }
+  .sb-form {
+    padding: 20px;
   }
   .home-slider {
     margin-left: -12px;
