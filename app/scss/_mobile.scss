@@ -387,6 +387,13 @@
   .wrapper-page__order__options__more-link {
     display: none;
   }
+  .shop-date__phones,
+  .shop-date__email {
+    margin-bottom: 25px;
+  }
+  .montage__body img {
+    margin: 0 0 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -911,6 +918,17 @@
     padding-top: 13px;
     font-size: 12px;
     line-height: 16px;
+  }
+  .mob-tpad20 {
+    padding-top: 20px;
+  }
+
+  .montage {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    &__header {
+
+    }
   }
 }
 
@@ -1711,5 +1729,47 @@
   }
   .stocks__item__products {
     font-size: 12px;
+  }
+  .title-shop {
+    margin-top: -5px;
+    margin-bottom: 18px;
+  }
+  .title-shop,
+  .shop-date__email__value a {
+    font-size: 16px;
+  }
+  .shop-date__phones__ico {
+    min-width: 40px;
+    width: 40px;
+    padding-left: 3px;
+  }
+  .shop-date__email__ico {
+    min-width: 40px;
+    width: 40px;
+  }
+  .shop-date__link-requisites {
+    font-size: 12px;
+  }
+  .shop-date {
+    padding-bottom: 30px;
+  }
+  .tpad35 {
+    padding-top: 24px;
+  }
+  .contacts-map {
+    height: 160px;
+  }
+  .montage__header {
+    padding-bottom: 15px;
+    h2 {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .cart-confirm__desc {
+    padding-bottom: 20px;
   }
 }
