@@ -280,19 +280,21 @@
         <div class="company-sectr1">
             <div class="row align-items-center company-sectr1__row1">
                 <div class="col-lg-7">
-                    <div class="company-sectr-1__desc company-text">
-                        <h2>Прямые поставки премиальных природных материалов</h2>
-                        <p>Мы являемся не только официальным дилером ведущих российских и европейских производителей
-                            керамики, клинкера и бетона, но и осуществляем прямые поставки натурального камня с карьеров
-                            различных точек мира.</p>
+                    <div class="company-sectr-1__desc company-text left-item">
+
+                            <h2>Прямые поставки премиальных природных материалов</h2>
+                            <p>Мы являемся не только официальным дилером ведущих российских и европейских производителей
+                                керамики, клинкера и бетона, но и осуществляем прямые поставки натурального камня с
+                                карьеров различных точек мира.</p>
+
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <div class="company-sectr1__img ">
+                    <div class="company-sectr1__img right-item">
 
                         <img src="images/dist/abaut/img1.jpg" alt="" loading="lazy" class="img-fluid rellax"
-                             data-rellax-speed="1">
-                        <div class="company-sectr1__img__line rellax" data-rellax-speed="2">
+                             data-rellax-speed="0.5">
+                        <div class="company-sectr1__img__line rellax" data-rellax-speed="-0.2">
                             <svg class="d-block" width="190" height="83" xmlns="http://www.w3.org/2000/svg"
                                  viewBox="0 0 231.41 101.49">
 
@@ -341,22 +343,24 @@
             </div>
             <div class="row company-sectr1__row2">
                 <div class="col-lg-4">
-                    <div class="company-sectr1__img2">
+                    <div class="company-sectr1__img2 left-item">
                         <img src="images/dist/abaut/img2.jpg" alt="" loading="lazy" class="img-fluid rellax"
                              data-rellax-speed="1">
                     </div>
                 </div>
                 <div class="col-lg-1 col-xl-1"></div>
                 <div class="col-lg-6 col-xl-5">
-                    <div class="company-sectr-1__desc2 company-text">
-                        <h2>Профессионалы своего дела</h2>
-                        <p>Штат нашей компании состоит из квалифицированных специалистов, прошедших обучение на заводах
-                            всемирно известных брендов и на карьерах по добыче натурального <br>камня в Индии, Германии,
-                            Китае и Турции.
-                            <br>
-                            <br>
-                            Мы гордимся и ценим наших сотрудников, способных справиться с любой задачей и помочь Вам
-                            сделать правильный выбор.</p>
+                    <div class="company-sectr-1__desc2 company-text right-item">
+
+                            <h2>Профессионалы своего дела</h2>
+                            <p>Штат нашей компании состоит из квалифицированных специалистов, прошедших обучение на
+                                заводах всемирно известных брендов и на карьерах по добыче натурального <br>камня в Индии,
+                                Германии, Китае и Турции.
+                                <br>
+                                <br>
+                                Мы гордимся и ценим наших сотрудников, способных справиться с любой задачей и помочь Вам
+                                сделать правильный выбор.</p>
+
                     </div>
                 </div>
             </div>
@@ -460,7 +464,7 @@
         <div class="company-sectr3">
             <div class="row align-items-center company-sectr3__row1">
                 <div class="col-lg-7">
-                    <div class="company-sectr-1__desc company-text">
+                    <div class="company-sectr-1__desc company-text left-item">
                         <h2>Больше, чем просто поставка материалов</h2>
                         <p>Работая с нами, вы получаете не только качественные материалы, <br>но и максимальный сервис.
                             <br>
@@ -470,13 +474,11 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <div class="company-sectr3__img position-relative ">
+                    <div class="company-sectr3__img position-relative right-item">
                         <img src="images/dist/abaut/img2_2.jpg" alt="" loading="lazy" class="img-fluid rellax"
-                             data-rellax-speed="0.5"
-                             data-rellax-mobile-speed="0">
+                             data-rellax-speed="0.5" >
 
-                        <div class="company-sectr3__img3__line rellax" data-rellax-speed="0.5"
-                             data-rellax-mobile-speed="0">
+                        <div class="company-sectr3__img3__line rellax2">
                             <svg class="d-block" width="190" height="83" xmlns="http://www.w3.org/2000/svg"
                                  viewBox="0 0 231.41 101.49">
 
@@ -633,7 +635,7 @@
     </div>
 </div>
 
-<script src="./js/aos.min.js"></script>
+<script src="./js/gsap.min.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
 
@@ -662,9 +664,7 @@
                 }
             },
         });
-        if (window.innerWidth > 1199) {
-            var rellax = new Rellax('.rellax');
-        }
+
     });
 </script>
 
@@ -1351,3 +1351,4 @@
 <script src="./js/app.min.js"></script>
 </body>
 </html>
+

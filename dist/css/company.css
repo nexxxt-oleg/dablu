@@ -158,7 +158,7 @@
     width: 190px;
 }
 .company-sectr1__row2 {
-    margin-top: -50px;
+    margin-top: -10px;
     padding-bottom: 120px;
 }
 
@@ -168,7 +168,7 @@
 
 .company-sectr2 {
     position: relative;
-    margin-bottom: 140px;
+    margin-bottom: 20vh;
 }
 /*
 .company-sectr2::after {
@@ -236,7 +236,7 @@
 }*/
 
 .company-sectr3__img3__line {
-    bottom: -150px;
+    bottom: 0;
     right: 100%;
     margin-right: 135px;
     display: block;
@@ -541,6 +541,7 @@
     }
 }
 */
+
 .rellax2 {
     animation: smoothLoop 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
