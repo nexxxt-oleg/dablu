@@ -310,7 +310,7 @@
     }
     .company-header__prim--map,
     .company-header__prim--import {
-        padding: 10px 15px;
+        padding: 10px 20px;
     }
     .company-header__prim b {
         font-size: 50px;
@@ -320,8 +320,16 @@
     }
 }
 @media screen and (max-width: 991px) {
+    .btn-pad20 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
     .company-sectr1 {
         padding-top: 50px;
+    }
+    .company-box .company-header__prim--area,
+    .company-box .company-header__prim--clients{
+        padding-left: 20px !important;
     }
     .company-sectr-1__desc {
         padding-top: 0;
@@ -428,6 +436,7 @@
     }
     .company-header__prim span {
         font-size: 14px;
+        line-height: 18px;
     }
     .company-text h2 {
         font-size: 18px;
@@ -465,15 +474,19 @@
     }
 }
 @media screen and (max-width: 574px) {
-    .company-header .row {
+    .company-header .row,
+    .row.company-box {
         margin-left: -5px;
         margin-right: -5px;
     }
-    .company-header .row > div {
+
+    .company-header .row > div,
+    .row.company-box > div {
         padding-left: 5px;
         padding-right: 5px;
     }
-    .company-header .fpad30 {
+    .company-header .fpad30,
+    .row.company-box .fpad30 {
         padding-bottom: 10px;
     }
     .company-sectr1__img::after,
@@ -599,5 +612,40 @@
     }
     100% {
         transform: translate(0, 0);
+    }
+}
+
+.fs-18 {
+    color: #231f20;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.company-box .company-header__prim {
+    height: 160px;
+}
+
+@media screen and (min-width: 991px) {
+    .company-box__col-left {
+        width: 46%;
+    }
+
+    .company-box__col-right {
+        width: 54%;
+    }
+    .company-box .company-header__prim--map {
+        background-position: 50px 50%;
+    }
+}
+.company-box .company-header__prim--area {
+    padding-left: 40px;
+    justify-content: flex-start;
+}
+@media screen and (max-width: 768px) {
+    .company-box .company-header__prim {
+        height: 110px;
+    }
+    .company-box .fpad30 {
+        padding-bottom: 15px;
     }
 }
